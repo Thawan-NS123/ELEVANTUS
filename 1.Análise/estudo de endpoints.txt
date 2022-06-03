@@ -1,1 +1,124 @@
+(1) /POST               /USUARIO/LOGIN
 
+request body
+{
+    "email":" ",
+    "senha":
+}
+
+response (200){
+    "id": " ",
+    "email": " ",
+    "nome": " "
+}
+______________________________________________
+
+(2) /POST               /cliente
+
+request body{
+  "personal": ,
+  "nome": "",
+  "plano": "",
+  "cpf": "",
+  "genero": "",
+  "nascimento": "",
+  "altura": "",
+  "peso": "",
+  "telefone": "",
+  "objetivo": "",
+  "observacao": "",
+  "treino": "",
+  "dia": "",
+  "horario":""
+}
+
+response (200)
+
+{
+  "personal": ,
+  "nome": "",
+  "plano": "",
+  "cpf": "",
+  "genero": "",
+  "nascimento": "",
+  "altura": "",
+  "peso": "",
+  "telefone": "",
+  "objetivo": "",
+  "observacao": "",
+  "treino": "",
+  "dia": "",
+  "horario": "",
+  "id": 
+}
+___________________________________________________
+(3) GET                 /cliente/busca?nome=
+
+response
+[
+  {
+    "id": ,
+    "nome": "",
+    "plano": "",
+    "cpf": "",
+    "genero": "",
+    "nasciemento": "",
+    "altura": "",
+    "peso": "",
+    "telefone": "",
+    "objetivo": "",
+    "observacao": "",
+    "treino": "",
+    "dia": ""
+  }
+]
+___________________________________________________
+
+(4) GET                 /cliente/:id
+
+response
+[
+  {
+    "id": ,
+    "nome": "",
+    "plano": "",
+    "cpf": "",
+    "genero": "",
+    "nasciemento": "",
+    "altura": "",
+    "peso": "",
+    "telefone": "",
+    "objetivo": "",
+    "observacao": "",
+    "treino": "",
+    "dia": ""
+  }
+]
+___________________________________________________
+
+(5) PUT                 /cliente/:id
+
+request body{
+  "personal": ,
+  "nome": "",
+  "plano": "",
+  "cpf": "",
+  "genero": "",
+  "nascimento": "",
+  "altura": "",
+  "peso": "",
+  "telefone": "",
+  "objetivo": "",
+  "observacao": "",
+  "treino": "",
+  "dia": "",
+  "horario":""
+}
+
+response(204)
+--vazio
+___________________________________________________
+
+(6) DELETE              /cliente/:id
+
+response(204)
