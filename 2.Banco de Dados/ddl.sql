@@ -20,10 +20,10 @@ CREATE TABLE tb_cliente(
         nr_altura               decimal(15,2),
         nr_peso                 decimal(15,2),
         nr_telefone             varchar(14),
-        ds_objetivo             varchar(2000),
-        ds_observacao           varchar(2000),
+        ds_objetivo             varchar(4000),
+        ds_observacao           varchar(4000),
         ds_treino_da_semana     varchar(5000),
-        ds_dia_da_semana        varchar(30),
-        hr_horario              varchar(30),
+        ds_dia_da_semana        varchar(100),
+        hr_horario              time,
         FOREIGN KEY (id_personal) REFERENCES tb_personal (id_personal)
 );

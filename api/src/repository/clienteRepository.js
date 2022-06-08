@@ -70,6 +70,8 @@ export async function buscarPorNome(nome) {
       WHERE nm_cliente			like ? `;
 
     const [linhas] = await conexao.query(comando, [`%${nome}%`]);
+    console.log(linhas)
+
     return linhas;
 }
 

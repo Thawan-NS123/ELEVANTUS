@@ -67,10 +67,13 @@ server.get('/cliente/busca' , async (req, resp) => {
         const { nome } = req.query;
         const resposta = await buscarPorNome(nome);
 
+        console.log(nome)
+
         if(resposta.length == 0) 
-        resp.status(404).send(['Cliente não encontrado']) 
+            resp.status(404).send(['Cliente não encontrado']) ;
+
         else
-        resp.send(resposta); 
+            resp.send(resposta); 
     } catch (err) {
         resp.status(400).send({
             erro:err.message
