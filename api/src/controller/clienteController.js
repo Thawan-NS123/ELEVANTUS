@@ -1,4 +1,4 @@
-import { inserirCliente, buscarPorId, buscarPorNome, alterarCliente, removerCliente } from '../repository/clienteRepository.js'
+import { inserirCliente, buscarPorId, buscarPorNome, alterarCliente, removerCliente, buscarPorCpf, buscarTodosClietes } from '../repository/clienteRepository.js'
 
 import{ Router } from 'express'
 
@@ -60,18 +60,29 @@ server.post('/cliente' , async (req, resp) => {
 })
 
 
+server.get('/cliente', async (req, resp) =>{
+    try {
 
-//Busca de cliente por nome
+        const resposta = await buscarTodosClietes();
+
+        resp.send(resposta);
+        
+    } catch (err) {
+        resp.status(400).send({
+            erro:err.message
+        })
+    }
+})
+
+
+
 server.get('/cliente/busca' , async (req, resp) => {
     try {
-        const { nome } = req.query;
-        const resposta = await buscarPorNome(nome);
-
-        console.log(nome)
+        const { cpf } = req.query;
+        const resposta = await buscarPorCpf(cpf);
 
         if(resposta.length == 0) 
             resp.status(404).send(['Cliente não encontrado']) ;
-
         else
             resp.send(resposta); 
     } catch (err) {
@@ -80,6 +91,29 @@ server.get('/cliente/busca' , async (req, resp) => {
         })
     }
 })
+
+
+
+//Busca de cliente por nome
+server.get('/cliente/busca' , async (req, resp) => {
+    try {
+        const { nome } = req.query;
+        const resposta = await buscarPorNome(nome);
+
+        if(resposta.length == 0) 
+            resp.status(404).send(['Cliente não encontrado']) ;
+        else
+            resp.send(resposta); 
+
+    } catch (err) {
+        resp.status(400).send({
+            erro:err.message
+        })
+    }
+})
+
+
+
 
 
 //Busca de cliente por ID
