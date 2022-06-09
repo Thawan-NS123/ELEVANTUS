@@ -1,0 +1,1113 @@
+@font-face {
+    font-family:'Font-1' ;
+    src: url(./../../fonts/CircularSpUIv3T-Black.woff2);
+}
+
+@font-face {
+    font-family:'Font-2';
+    src: url(./../../fonts/CircularSpUIv3T-Book.woff2);
+}
+
+@font-face {
+    font-family:'Font-3';
+    src: url(./../../fonts/Interstate-BlackCondItalic-da1f54cf95ec060c7c84946e58f9aeaf7bac31ef251ccea3d83b45a23abee8ae.woff);
+}
+
+@font-face {
+    font-family:'Font-4' ;
+    src: url(./../../fonts/SourceSansPro-Regular-a13fb29f4c89c74f6035d416dd5403289425f6b9c7edb44062fc2b8f49925fab.woff);
+}
+
+@font-face {
+    font-family:'Font-5';
+    src: url(./../../fonts/1cce82154216dc3cb04a84d011ce1201.woff2);
+}
+
+@font-face {
+    font-family: 'Font-6';
+    src: url(./../../fonts/ae7c84783ad48b6d1c8e2bfbe707e0d4.woff2);
+}
+
+.pagina-consultar{
+
+    overflow-x: hidden;
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        border: 0px solid black;
+    }
+    
+    .titulo-da-consulta{
+        font-size: 70px ;
+        font-family: 'Font-2';
+    }
+    
+    .divprinipal{
+        background-color: #c4c4c4;
+        padding: 40px 0px;
+        margin: 0px 80px;
+    }
+    
+    .config-consultaefoto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1160px;
+    }
+    
+    .label-texto{
+        font-size: 12px ;
+        font-family: 'Font-1';
+        position: absolute;
+        margin-top: -5px;
+        color: #000
+    }
+    
+    .logo-user{
+        height: 90px;
+    }
+    
+    .consultaefoto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .input-Medio-BuscarNome{
+        width: 1200px;
+        border-radius: 5px;
+        border-style: none;
+        height: 50px;
+        padding: 0px 10px;
+        margin-top: 10px;
+        margin-left: 0em;
+        outline: none;
+        font: 15px Font-1;
+    }
+    
+    .caixa-grande{
+        width: 100px;
+    
+    }
+    
+    .inpgeral{
+        border-radius: 5px;
+        border-style: none;
+        height: 40px;
+        margin-top: 10px;
+    }
+    
+    .caixa-input{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;    
+    }
+    
+    .input-configuracao{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 60px;
+        font: 15px titulo;
+    }
+    
+    .input-Pequeno{
+        width: 350px;
+        border-radius: 5px;
+        border-style: none;
+        height: 50px;
+        margin-top: 10px;
+        padding: 0px 10px;
+        outline: none;
+        font: 20px texto;
+    }
+    
+    .input-Medio{
+        width: 550px;
+        border-radius: 5px;
+        border-style: none;
+        height: 50px;
+        padding: 0px 10px;
+        margin-top: 10px;
+        outline: none;
+        font: 15px Font-1;
+    }
+    
+    .input-Grande{
+        width: 1160px;
+        border-radius: 5px;
+        border-style: none;
+        height: 50px;
+        padding: 0px 10px;
+        margin: 10px 0px;
+        outline: none;
+        font: 20px texto;
+    }
+    
+    .caixa-de-texto-media{
+        width: 550px;
+        border-radius: 5px;
+        border-style: none;
+        height: 200px;
+        margin-top: 10px;
+        padding: 10px 10px;
+        outline: none;
+        font: 20px texto;
+    }
+    
+    .caixa-de-texto-grande{
+        width: 1160px;
+        border-radius: 5px;
+        border-style: none;
+        height: 200px;
+        margin: 10px 0px;
+        padding: 10px 10px;
+        outline: none;
+        font: 50px texto;
+    }
+    
+    .botões-posicao{
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .botao-de-salvar{
+        padding: 20px 60px;
+        background-color: #f24822;
+        border: #ffffff;
+        color: #ffffff;
+        font-size: 15px ;
+        margin-right: 2em;
+    }
+    
+    
+    .botao-de-salvar:hover{
+        cursor: pointer;
+        background-color: #ff5724;
+    }
+    
+    .botao-de-descartar{
+        border: white;
+    }
+    
+    @media (min-width: 428px) and (max-width: 719px){
+        .titulo-da-consulta{
+            font: 40px titulo;
+        }
+            
+        .label-texto{
+            font: 12px titulo;
+            position: absolute;
+            margin-top: -5px;
+            color: #000
+        }
+        
+        .logo-user{
+            height: 90px;
+        }
+        
+        .consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .config-consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 380px;
+            padding: 0px 10px;
+        }
+        
+        .divprincipal{
+            background-color: #c4c4c4;
+            padding: 40px 0px;
+            margin: 0px 10px;
+     
+        }
+        
+        .caixa-dist{
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .caixa-input{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;    
+        }
+        
+        .input-configuracao{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 0px;
+            font: 15px titulo;
+        }
+        
+        .input-Pequeno{
+            width: 350px;
+            border-radius: 5px;
+            border-style: none;
+            height: 30px;
+            margin-top: 10px;
+            padding: 0px 10px;
+            outline: none;
+            font: 18px texto;
+        }
+        
+        .input-Medio{
+            width: 350px;
+            border-radius: 5px;
+            border-style: none;
+            height: 30px;
+            padding: 0px 10px;
+            margin-top: 10px;
+            outline: none;
+            font: 18px texto;
+        }
+        
+        .input-Grande{
+            width: 350px;
+            border-radius: 5px;
+            border-style: none;
+            height: 30px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+            outline: none;
+            font: 18px texto;
+        }
+        
+        .caixa-de-texto-media{
+            width: 350px;
+            border-radius: 5px;
+            border-style: none;
+            height: 150px;
+            margin-top: 10px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .caixa-de-texto-grande{
+            width: 350px;
+            border-radius: 5px;
+            border-style: none;
+            height: 150px;
+            margin: 10px 0px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .botoes-posicao{
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .botao-de-salvar{
+            padding: 20px 60px;
+            border-radius: 25px;
+            background-color: #f24822;
+            color: #ffffff;
+            font: 15px titulo;
+        }
+        
+        .botao-de-descartar{
+            padding: 20px 40px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            color: #000000;
+            font: 15px titulo;
+            border: solid black 2px
+        }
+    }
+    
+    @media (min-width: 720px) and (max-width:1023px){
+        .titulo-da-consulta{
+            font: 40px titulo;
+        }
+        
+        .label-texto{
+            font: 12px titulo;
+            position: absolute;
+            margin-top: -5px;
+            color: #000
+        }
+        
+        .logo-user{
+            height: 90px;
+        }
+        
+        .consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .config-consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 600px;
+        }
+        
+        .divprincipal{
+            background-color: #c4c4c4;
+            padding: 40px 0px;
+            margin: 0px 10px;
+            width: 700px;
+        
+        }
+        
+        .caixa-dist{
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .inpgeral{
+            border-radius: 5px;
+            border-style: none;
+            height: 40px;
+            margin-top: 10px;
+        }
+        
+        .caixa-input{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;    
+        }
+        
+        
+        .input-configuracao{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 40px;
+            font: 15px titulo;
+        }
+        
+        .input-Pequeno{
+            width:170px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            margin-top: 10px;
+            padding: 0px 10px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .input-Medio{
+            width: 270px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            padding: 0px 10px;
+            margin-top: 10px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .input-Grande{
+            width: 600px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .caixa-de-texto-media{
+            width: 270px;
+            border-radius: 5px;
+            border-style: none;
+            height: 200px;
+            margin-top: 10px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .caixa-de-texto-grande{
+            width: 600px;
+            border-radius: 5px;
+            border-style: none;
+            height: 200px;
+            margin: 10px 0px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .botoes-posicao{
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .botao-de-salvar{
+            padding: 20px 60px;
+            border-radius: 25px;
+            background-color: #f24822;
+            color: #ffffff;
+            font: 15px titulo;
+        }
+    
+        .botao-de-descartar{
+            padding: 20px 40px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            color: #000000;
+            font: 15px titulo;
+            border: solid black 2px
+        }
+    }
+    
+    @media (min-width: 1024px) and (max-width:1279px){
+        .titulo-da-consulta{
+            font: 40px titulo;
+        }
+        
+        .label-texto{
+            font: 12px titulo;
+            position: absolute;
+            margin-top: -5px;
+            color: #000
+        }
+        
+        .logo-user{
+            height: 90px;
+        }
+        
+        .consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        .config-consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 900px;
+        }
+        
+        .divprincipal{
+            background-color: #c4c4c4;
+            padding: 40px 0px;
+            margin: 0px 10px;
+            width: 1000px;
+        
+        }
+        
+        .caixa-dist{
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        
+        .caixa-input{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;    
+        }
+        
+        
+        .input-configuracao{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 40px;
+            font: 15px titulo;
+        }
+        
+        .input-Pequeno{
+            width:250px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            margin-top: 10px;
+            padding: 0px 10px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .input-Medio{
+            width: 400px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            padding: 0px 10px;
+            margin-top: 10px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .input-Grande{
+            width: 900px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .caixa-de-texto-media{
+            width: 400px;
+            border-radius: 5px;
+            border-style: none;
+            height: 200px;
+            margin-top: 10px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .caixa-de-texto-grande{
+            width: 900px;
+            border-radius: 5px;
+            border-style: none;
+            height: 200px;
+            margin: 10px 0px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .botoes-posicao{
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .botao-de-salvar{
+            padding: 20px 60px;
+            border-radius: 25px;
+            background-color: #f24822;
+            color: #ffffff;
+            font: 15px titulo;
+        }
+    
+        .botao-de-descartar{
+            padding: 20px 40px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            color: #000000;
+            font: 15px titulo;
+            border: solid black 2px
+        }
+    }
+    
+    @media (min-width: 1280px) and (max-width:1366px){
+        .titulo-da-consulta{
+            font: 40px titulo;
+        }
+        
+        .label-texto{
+            font: 12px titulo;
+            position: absolute;
+            margin-top: -5px;
+            color: #000
+        }
+        
+        .logo-user{
+            height: 90px;
+        }
+        
+        .consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .config-consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1160px;
+        }
+        
+        .divprincipal{
+            background-color: #c4c4c4;
+            padding: 40px 0px;
+            margin: 0px 80px;
+        
+        }
+        
+        .caixa-dist{
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .inpgeral{
+            border-radius: 5px;
+            border-style: none;
+            height: 40px;
+            margin-top: 10px;
+        }
+        
+        .caixa-input{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;    
+        }
+        
+        
+        .input-configuracao{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 60px;
+            font: 15px titulo;
+        }
+        
+        .input-Pequeno{
+            width: 350px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            margin-top: 10px;
+            padding: 0px 10px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .input-Medio{
+            width: 550px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            padding: 0px 10px;
+            margin-top: 10px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .input-Grande{
+            width: 1160px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .caixa-de-texto-media{
+            width: 550px;
+            border-radius: 5px;
+            border-style: none;
+            height: 200px;
+            margin-top: 10px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .caixa-de-texto-grande{
+            width: 1160px;
+            border-radius: 5px;
+            border-style: none;
+            height: 200px;
+            margin: 10px 0px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .botoes-posicao{
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .botao-de-salvar{
+            padding: 20px 60px;
+            border-radius: 25px;
+            background-color: #f24822;
+            color: #ffffff;
+            font: 15px titulo;
+        }
+    
+        .botao-de-descartar{
+            padding: 20px 40px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            color: #000000;
+            font: 15px titulo;
+            border: solid black 2px
+        }
+    }
+    
+    @media (min-width: 1367px) and (max-width:1440px){
+        .titulo-da-consulta{
+            font: 40px titulo;
+        }
+           
+        .label-texto{
+            font: 12px titulo;
+            position: absolute;
+            margin-top: -5px;
+            color: #000
+        }
+        
+        .logo-user{
+            height: 90px;
+        }
+        
+        .consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    
+        .config-consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1160px;
+        }
+        
+        .divprincipal{
+            background-color: #c4c4c4;
+            padding: 40px 0px;
+            margin: 0px 80px;
+        
+        }
+        
+        .caixa-dist{
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .inpgeral{
+            border-radius: 5px;
+            border-style: none;
+            height: 40px;
+            margin-top: 10px;
+        }
+        
+        .caixa-input{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;    
+        }
+        
+        
+        .input-configuracao{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 60px;
+            font: 15px titulo;
+        }
+        
+        .input-Pequeno{
+            width: 350px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            margin-top: 10px;
+            padding: 0px 10px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .input-Medio{
+            width: 550px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            padding: 0px 10px;
+            margin-top: 10px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .input-Grande{
+            width: 1160px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .caixa-de-texto-media{
+            width: 550px;
+            border-radius: 5px;
+            border-style: none;
+            height: 200px;
+            margin-top: 10px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .caixa-de-texto-grande{
+            width: 1160px;
+            border-radius: 5px;
+            border-style: none;
+            height: 200px;
+            margin: 10px 0px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .botoes-posicao{
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .botao-salvar{
+            padding: 20px 60px;
+            border-radius: 25px;
+            background-color: #f24822;
+            color: #ffffff;
+            font: 15px titulo;
+        }
+    
+        .botao-de-descartar{
+            padding: 20px 40px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            color: #000000;
+            font: 15px titulo;
+            border: solid black 2px
+        }
+    }
+    
+    @media (min-width: 1441px){
+        .titulo-da-consulta{
+            font: 40px titulo;
+        }
+        
+        
+        .label-texto{
+            font: 12px titulo;
+            position: absolute;
+            margin-top: -5px;
+            color: #000
+        }
+    
+        .logo-user{
+            height: 90px;
+        }
+        
+        .consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .config-consultaefoto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+        }
+        
+        .divprin{
+            background-color: #c4c4c4;
+            padding: 40px 0px;
+            margin: 0px 80px;
+        
+        }
+        
+        .caixa-dist{
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .caixa-grande{
+            width: 100px;
+        
+        }
+        
+        .inpgeral{
+            border-radius: 5px;
+            border-style: none;
+            height: 40px;
+            margin-top: 10px;
+        }
+        
+        .caixa-input{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;    
+        }
+        
+        
+        .input-configuracao{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 0px;
+            font: 15px titulo;
+        }
+        
+        .input-Pequeno{
+            max-width: 350px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            margin-top: 10px;
+            padding: 0px 10px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .input-Medio{
+            width: 550px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            padding: 0px 10px;
+            margin-top: 10px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .input-Grande{
+            width: 1160px;
+            border-radius: 5px;
+            border-style: none;
+            height: 50px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+            outline: none;
+            font: 20px texto;
+        }
+        
+        .caixa-de-texto-media{
+            width: 550px;
+            border-radius: 5px;
+            border-style: none;
+            height: 200px;
+            margin-top: 10px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .caixa-de-texto-grande{
+            width: 1160px;
+            border-radius: 5px;
+            border-style: none;
+            height: 200px;
+            margin: 10px 0px;
+            padding: 10px 10px;
+            outline: none;
+            font: 16px texto;
+        }
+        
+        .botoes-posicao{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 50px;
+           
+        }
+        
+        .botao-de-salvar{
+            padding: 20px 60px;
+            border-radius: 25px;
+            background-color: #f24822;
+            color: #ffffff;
+            font: 15px titulo;
+        }
+    
+        .botao-de-descartar{
+            padding: 20px 40px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            color: #000000;
+            font: 15px titulo;
+            border: solid black 2px
+        }
+    }
+    
+    @media (min-width: 428px) and (max-width: 719px){
+        .fundo-basico{
+            background-color: #c4c4c4;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    
+    @media (min-width:720px) and (max-width:1023px){
+        .fundo-basico{
+            background-color: #c4c4c4;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            
+            align-items: center;
+        }
+    }
+    
+    @media (min-width:1024px) and (max-width:1279px){
+        .fundo-basico{
+            background-color: #c4c4c4;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            
+            align-items: center;
+        }
+    }
+    
+    @media (min-width:1280px) and (max-width:1366px){
+        .fundo-basico{
+            background-color: #c4c4c4;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            
+            align-items: center;
+        }
+    }
+    
+    @media (min-width:1367px) and (max-width:1440px){
+        .fundo-basico{
+            background-color: #c4c4c4;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            
+            align-items: center;
+        }
+    }
+    
+    @media (min-width:1441px){
+        .fundo-basico{
+            background-color: #c4c4c4;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+
+}

@@ -1,5 +1,5 @@
 INSERT INTO tb_personal (nm_personal, ds_email, ds_senha)
-VALUES  ("Cleiton", "cleiton@gmail.com", "716182020");
+VALUES  ("Cleiton", "Elev.clei@gmail.com", "716182020");
 
 select * from tb_personal;
 
@@ -8,7 +8,7 @@ select id_personal 		id,
        nm_personal		nome,
        ds_email			email
   from tb_personal
- where ds_email 		= 'cleiton@gmail.com'
+ where ds_email 		= 'Elev.clei@gmail.com'
    and ds_senha			= '716182020';
    
 
@@ -36,7 +36,7 @@ INSERT INTO tb_cliente (id_personal,
                         1.87,
                         80.00,
                         '(11)94002-8922', 
-						'Ganhar massa muscular sem perder massa magra',
+						'Ganhar massa muscular',
                         '',
                         'Manguito Rotatorio, Supino Reto, Supino com alteres, Crucifixo, Deck Pack',
                         'Segunda à Quarta',
@@ -60,6 +60,23 @@ UPDATE tb_cliente
         ds_dia_da_semana 			= 'Quinta à sábado',
         hr_horario 					= '13:00'
  WHERE  id_cliente					= 1;
+
+-- Buscar todos Clientes
+SELECT   id_cliente			            			id,
+		nm_cliente			            			nome,
+		ds_plano			            			plano,
+		ds_cpf				            			cpf,
+		ds_genero			            			genero,
+		date_format(dt_nascimento, '%d/%m/%Y')      nasciemento,
+		nr_altura			            			altura,
+		nr_peso				            			peso,
+		nr_telefone			            			telefone,
+		ds_objetivo			            			objetivo,
+		ds_observacao		            			observacao,
+		ds_treino_da_semana	            			treino,
+		ds_dia_da_semana	            			dia,	
+        time_format(hr_horario, '%Hh%m')			horario  
+   FROM tb_cliente;
 
 
 -- Buscar por nome
@@ -98,7 +115,7 @@ SELECT  id_cliente								id,
 	    ds_dia_da_semana	     				dia,
 		time_format(hr_horario, '%Hh%m')		horario
   FROM tb_cliente
- WHERE ds_cpf			like '%000%';
+ WHERE ds_cpf			like '%34%';
 
 
 -- Buscar por id

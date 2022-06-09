@@ -1,4 +1,4 @@
-Create database elevantusBD;
+create database elevantusBD;
 use elevantusBD;
 
 CREATE TABLE tb_personal (

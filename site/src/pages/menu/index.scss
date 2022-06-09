@@ -1,0 +1,132 @@
+@font-face {
+    font-family:'Font-1' ;
+    src: url(./../../fonts/CircularSpUIv3T-Black.woff2);
+}
+
+@font-face {
+    font-family:'Font-2';
+    src: url(./../../fonts/CircularSpUIv3T-Book.woff2);
+}
+
+@font-face {
+    font-family:'Font-3';
+    src: url(./../../fonts/Interstate-BlackCondItalic-da1f54cf95ec060c7c84946e58f9aeaf7bac31ef251ccea3d83b45a23abee8ae.woff);
+}
+
+@font-face {
+    font-family:'Font-4' ;
+    src: url(./../../fonts/SourceSansPro-Regular-a13fb29f4c89c74f6035d416dd5403289425f6b9c7edb44062fc2b8f49925fab.woff);
+}
+
+@font-face {
+    font-family:'Font-5';
+    src: url(./../../fonts/1cce82154216dc3cb04a84d011ce1201.woff2);
+}
+
+@font-face {
+    font-family: 'Font-6';
+    src: url(./../../fonts/ae7c84783ad48b6d1c8e2bfbe707e0d4.woff2);
+}
+
+.pagina-menu{
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        border: 01px solid violet;
+    }
+    
+    .faixa-menu{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+    
+    .parte-esquerda{
+    background-color: #ff3d00; 
+
+    }
+    
+    .home{
+        padding: 15px;
+    }
+    
+    
+    
+    .texto-menu{
+        padding: 4em 2em 7em 1em;
+    }
+    
+    .paragrafo-menu{
+        font-size: 2.7em;
+        color: white;
+        width: 7em;
+    }
+    
+    .parte-direita{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../../public/image/Mulher-fazendo-barra.jpg);
+        background-size: center center;
+        background-repeat: no-repeat;
+        
+        
+    }
+    
+    .perfil-cleiton{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        padding: 2em;
+    }
+    
+    .nome-cleiton{
+        color: white;
+        width: 4em;
+    }
+    
+    .botoes-link{
+        display: flex;
+        flex-direction: row;
+        padding-top: 22em;
+        justify-content: center;
+        
+    }
+    
+    .botao-cadastro, .botao-consulta{
+        font-family:'Font-1';
+
+        background-color: #ff3d00;
+
+        padding: 1.5em 4em ;
+
+        border-radius: 0.25em;
+
+        color: white;
+        text-decoration: none;
+    }
+    
+    .botao-cadastro:hover{
+        cursor: pointer;
+        background-color: #ff5724;
+    }
+    
+    .botao-consulta{
+        margin-left: 19em;
+    }
+    
+    .botao-consulta:hover{
+        cursor: pointer;
+        background-color: #ff5724;
+    }
+    
+    img{
+        border-radius: 9em;
+    }
+}
+
