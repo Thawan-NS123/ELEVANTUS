@@ -98,7 +98,8 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 0px 60px;
-        font: 15px titulo;
+        font-size: 15px ;
+        font-family: 'Font-1';
     }
     
     .input-Pequeno{
@@ -1063,6 +1064,9 @@
     }
     
     @media (min-width:1280px) and (max-width:1366px){
+        
+        
+
         .fundo-basico{
             background-color: #c4c4c4;
             display: flex;
@@ -1092,6 +1096,10 @@
             display: flex;
             align-items: center;
         }
+    }
+
+    @media (max-width:1280) {
+        
     }
     
 

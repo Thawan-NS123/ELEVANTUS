@@ -77,7 +77,8 @@ export default function Index(){
                     </div>
 
                     <div>
-                        <button className="Login-Elevantu-Botao" onClick={entrarClink} disabled={carregando} >ENTRAR</button>
+                        <button className="Login-Elevantu-Botao" onClick={entrarClink}
+                                disabled={carregando} >ENTRAR</button>
                     </div>
 
                 </div>

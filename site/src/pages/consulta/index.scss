@@ -41,7 +41,7 @@
     
     .titulo-da-consulta{
         font-size: 70px ;
-        font-family: 'Font-2';
+        font-family: 'Font-1';
     }
     
     .divprinipal{
@@ -110,7 +110,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 0px 60px;
-        font: 15px titulo;
+        font: 15px Font-1;
     }
     
     .input-Pequeno{
@@ -121,7 +121,7 @@
         margin-top: 10px;
         padding: 0px 10px;
         outline: none;
-        font: 20px texto;
+        font: 15px Font-1;
     }
     
     .input-Medio{
@@ -143,7 +143,7 @@
         padding: 0px 10px;
         margin: 10px 0px;
         outline: none;
-        font: 20px texto;
+        font: 20px Font-1;
     }
     
     .caixa-de-texto-media{
@@ -154,7 +154,7 @@
         margin-top: 10px;
         padding: 10px 10px;
         outline: none;
-        font: 20px texto;
+        font: 20px Font-1;
     }
     
     .caixa-de-texto-grande{
@@ -165,7 +165,7 @@
         margin: 10px 0px;
         padding: 10px 10px;
         outline: none;
-        font: 50px texto;
+        font: 50px Font-1;
     }
     
     .botões-posicao{
