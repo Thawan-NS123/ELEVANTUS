@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { login } from '../../api/usuarioApi'
 import { useNavigate } from 'react-router-dom';
 
 import LoadingBar from 'react-top-loading-bar'
@@ -25,10 +25,7 @@ export default function Index(){
 
         try {
 
-            const resposta = await axios.post('http://localhost:5000/usuario/login', {
-                email:email,
-                senha:senha
-            });
+            const resposta = await login(email, senha)
 
             setTimeout(() => {
                 navegar('/menu');
