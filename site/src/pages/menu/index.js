@@ -1,9 +1,30 @@
+import storage from 'local-storage'
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'
+
 import { Link } from 'react-router-dom';
 import './index.scss';
 
-
-
 export default function Index(){
+
+    const [usuario, setUsuario] = useState('Thawan Nascimento Silva');
+
+    const navegar = useNavigate();
+
+    useEffect(() => {
+        if(!storage('usuario-logado')){
+            navegar('/login')
+        } else {
+            const usuarioLogado = storage('usuario-logado')
+            setUsuario(usuarioLogado.nome);
+        }
+    },[])
+
+
+    function sairClick(){
+        storage.remove('usuario-logado');
+        navegar('/login');
+    }
 
     return(
         <main className='pagina-menu'>
@@ -12,13 +33,14 @@ export default function Index(){
 
                         <div className="texto-menu">
                             <p className="paragrafo-menu">Bem vindo a area do menu, para onde você deseja ir ?</p>
+                            <p onClick={sairClick} className="paragrafo-sair">Voltar</p>
                         </div>
                         
                     </div>
                     <div className="parte-direita">
 
                         <div className="perfil-cleiton">
-                            <p className="nome-cleiton">Cleiton Tonarge Silva</p>
+                            <p className="nome-cleiton">{usuario}</p>
                             <img src="/image/cleiton.jpg" width="70em" alt='imagem-fundo' styled='border-radius: 9em;' />
                         </div>
 

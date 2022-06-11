@@ -41,7 +41,7 @@
     
     .titulo-da-consulta{
         font-size: 70px ;
-        font-family: 'Font-2';
+        font-family: Font-2;
     }
     
     .divprinipal{
@@ -163,17 +163,31 @@
     }
     
     .botao-de-salvar{
-        padding: 20px 60px;
-        background-color: #f24822;
-        border: #ffffff;
-        color: #ffffff;
-        font-size: 15px ;
+        margin-right: 2em;
+
+        font-family:'Font-1';
+        font-size: 1.1em;
+    
+        background-color: #ff3d00;
+    
+        padding: 1em 3em ;
+    
+        border-radius: 0.25em;
+    
+        color: white;
+        text-decoration: none;
+    
     }
     
     
     .botao-de-salvar:hover{
+
         cursor: pointer;
         background-color: #ff5724;
+        transition:all 0.3s ease;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
     }
     
     

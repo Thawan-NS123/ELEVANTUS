@@ -1,8 +1,10 @@
 import { login } from '../../api/usuarioApi'
 import { useNavigate } from 'react-router-dom';
 
+import storage from 'local-storage'
+
 import LoadingBar from 'react-top-loading-bar'
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './index.scss';
 
 
@@ -14,8 +16,13 @@ export default function Index(){
     const [carregando, setCaregando]   = useState(false);
 
     const navegar = useNavigate();
-
     const ref = useRef();
+
+    useEffect(() => {
+        if(storage('usuario-logado')){
+            navegar('/menu')
+        }
+    }, [])
 
     async function entrarClink(){
 
@@ -25,11 +32,12 @@ export default function Index(){
 
         try {
 
-            const resposta = await login(email, senha)
+            const resposta = await login(email, senha);
+            storage('usuario-logado', resposta)
 
             setTimeout(() => {
                 navegar('/menu');
-            }, 1000);
+            }, 2000);
 
 
             
