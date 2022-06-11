@@ -151,7 +151,7 @@ export default function Index(){
                     </div>
 
                         <div className='botoes-posicao'>
-                            <button style={{fontFamily: 'Font-1'}} onClick={salvarClick}
+                            <button style={{fontFamily: 'Font-1', padding:'1.5em 4em', borderRadius: '0.25em'}} onClick={salvarClick}
                              className='botao-de-salvar'>SALVAR</button>
                         </div>
 
