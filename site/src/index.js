@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+import { ToastContainer } from 'react-toastify';
+
+
 import './index.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -16,6 +21,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ToastContainer/>
         <Routes>
             <Route path='/' element={ <LandingPage /> }/>
             <Route path='/login' element={ <Login /> }/>

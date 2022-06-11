@@ -21,7 +21,7 @@ request body{
   "plano": "",
   "cpf": "",
   "genero": "",
-  "nascimento": "",
+  "nascimento": ,
   "altura": "",
   "peso": "",
   "telefone": "",

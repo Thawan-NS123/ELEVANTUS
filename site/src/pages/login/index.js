@@ -74,7 +74,7 @@ export default function Index(){
 
                     <div className='Login-Elevantu-Email'>
                         <label className='Login-Elevantu-Email_label'>Email </label>
-                        <input type='text' placeholder=' example@hotmail.com' className='Login-Elevantu-Input'
+                        <input type='email' placeholder=' example@hotmail.com' className='Login-Elevantu-Input'
                         value={email} onChange={e => setEmail(e.target.value)}/>
                     </div>
 

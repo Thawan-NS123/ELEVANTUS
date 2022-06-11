@@ -19,7 +19,7 @@ export default function Index(){
             </div>
 
                 <div className='caixa-input'>
-                    <label for='text' className='label-texto'></label>
+                    <label for='search' className='label-texto'></label>
                     <input type='text' placeholder='Buscar por nome' className='input-Medio-BuscarNome'/>
                 </div>
 
@@ -51,7 +51,7 @@ export default function Index(){
 
                 <div className='caixa-input'>
                     <label for='text' className='label-texto'>&nbsp;&nbsp; Data de nascimento</label>
-                    <input type='number'  className='input-Pequeno'/>
+                    <input type='date'  className='input-Pequeno'/>
                 </div>
             </div>
 
@@ -106,7 +106,7 @@ export default function Index(){
 
                 <div className='caixa-input'>
                     <label for='text' className='label-texto'>&nbsp;&nbsp; Horário</label>
-                    <input type='text' className='input-Medio'/>
+                    <input type='time' className='input-Medio'/>
                 </div> 
             </div>
 
