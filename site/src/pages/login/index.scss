@@ -3,104 +3,96 @@
     src: url(./../../fonts/CircularSpUIv3T-Black.woff2);
 }
 
-
-
-
-.pagina-login{
-
-
-    overflow-x: hidden;
-
+.Page-Login{
     *{
-        margin: 0px;
-        padding: 0px;
         box-sizing: border-box;
-        border: 0px solid black;
+        padding: 0px;
+        margin: 0px;
+        border: 0px solid violet;   
     }
     
     .Login-Elevantus{
-        display:flex;
-        flex-direction: column;
-        background-color: #f5f5f5;
-        height: 100vh;
-    
-    }
-    
-    .Login-Elevantus-Imagem_Email_Senha_Botao{
         display: flex;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
-        margin-top: 10%;
+        background-color: #c4c4c4;
     }
     
-    .Login-Elevantus-Imagem{
-        border-radius: 0.8em 0em 0em 0.8em ;
-        width:24.9em;
-        height: auto;
+    .Login-Elevantus-Imagem_login{
+        width: 115vh;
+        height: 100vh;
     }
     
-    .credencias_invalidas{
-        color: #ff3d00;
-        text-align: center;
-    }
-    
-    
-    .Login-Elevantu-Email_Senha_Botao:visited,
-    .Login-Elevantu-Email_Senha_Botao:active,
-    .Login-Elevantu-Email_Senha_Botao{
-        background-color: #C4C4C4;
-        border-radius: 0em 0.8em 0.8em 0em ;
-    
-        padding: 2.6% 3em;
-        margin-bottom: 0.23em;
-    }
-
-    
-    .Login-Elevantu-Email,
-    .Login-Elevantu-Senha{
+    .Login-Elevantus-Informacoes_logo_email_e_senha_e_botao{
         display: flex;
         flex-direction: column;
-    
-        margin-bottom:2em ;
-        margin-left: 0.5em;
+        margin: 0em 0em 0em 5em;
     }
     
-    .Login-Elevantu-Email_label,
-    .Login-Elevantu-Senha_label{
-        margin-left: 8px;
-        margin-bottom: 1px;
-        font: 15px 'Font-1';
+    .Logo{    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 2em;
+        margin-left: 13em ;
+        width: 5em;
     }
-    
-    .Login-Elevantu-Input{
-        width: 300px;
-        height: 40px;
-        border-radius: 0.5em;
-        border-style: none;
-        outline:none;
-        padding:10px 10px;
-    }
-    
-    
 
+    .credencias_invalidas{
+        color: red;
+        margin-left: 14em;
+        margin-bottom: 1em;
+    }
+    
+    
+    .Login-Elevantus-Informacoes_email,
+    .Login-Elevantus-Informacoes_senha{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+    
+    .Login-Elevantus-Informacoes_label{
+        font-size: 1.5em;
+    }
+    
+    .Login-Elevantus-Informacoes_input{
+        padding: 0.5em 8.5em 0.5em 0.5em;
+        border-radius: 0.2em;
+        border: none;
+        font-size: 1.5em;
+        outline: none;
+        border-style: none;
+    }
+    
+    .Login-Elevantus-Informacoes_botao{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    
+    }
+    
     button{
-        padding: 1em 3em;
+        font-size: 1.1em;
+    
         background-color: #ff3d00;
     
-        font-family:'Font-1';
+        padding: 1em 4em ;
     
-        border-radius: 0.5em;
-    
-        margin-left: 78px;
+        border-radius: 0.25em;
     
         color: white;
         text-decoration: none;
     }
     
-    .Login-Elevantu-Botao:hover{
+    button:hover{
         cursor: pointer;
+        background-color: #ff5724;
+        transition:all 0.5s ease;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
     }
-    
-
 }
+
+

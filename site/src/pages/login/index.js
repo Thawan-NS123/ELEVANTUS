@@ -55,43 +55,44 @@ export default function Index(){
 
 
     return(
-        <main className='pagina-login'>
-            <LoadingBar color='#ff3d00' ref={ref} />
+            
+        <main className="Page-Login">
+        <LoadingBar color='#ff3d00' ref={ref} />
 
-            <p>Elev.clei@gmail.com</p>
-            <p>716182020</p>
-            <div className='Login-Elevantus-Imagem_Email_Senha_Botao'>
+            <div class="Login-Elevantus">
+        
+                <img src="/image/img-login.jpg" className='Login-Elevantus-Imagem_login' alt="Image-Login"/>
+        
+                <div className="Login-Elevantus-Informacoes_logo_email_e_senha_e_botao">
+        
+                    <div className="Login-Elevantus-Informacoes_logo">
+                        <img className="Logo" src="/image/1652835584315 (1).png" alt="Logo-Elevantus"/>
+                    </div>
 
-                <div>
-                    <img className='Login-Elevantus-Imagem' src='/image/Imagem-Login.jfif' alt='Imagem Login'/>
-                </div>
-
-                <div className='Login-Elevantu-Email_Senha_Botao'>
-
-                    <div>
+                    <div >
                         <h5 className='credencias_invalidas' > {erro} </h5>
                     </div>
-
-                    <div className='Login-Elevantu-Email'>
-                        <label className='Login-Elevantu-Email_label'>Email </label>
-                        <input type='email' placeholder=' example@hotmail.com' className='Login-Elevantu-Input'
-                        value={email} onChange={e => setEmail(e.target.value)}/>
+        
+                    <div className="Login-Elevantus-Informacoes_email">
+                        <label style={{fontFamily: 'Font-5'}} className="Login-Elevantus-Informacoes_label" for="email">&nbsp; Email</label>
+                        <input style={{fontFamily: 'Font-2'}} className="Login-Elevantus-Informacoes_input" type="email"
+                        placeholder=' example@hotmail.com' value={email} onChange={e => setEmail(e.target.value)}/>
                     </div>
-
-                    <div className='Login-Elevantu-Senha'>
-                        <label className='Login-Elevantu-Senha_label'>Senha</label>
-                        <input type='password' placeholder=' ***' className='Login-Elevantu-Input'
-                        value={senha} onChange={e => setSenha(e.target.value)}/>   
+        
+                    <div className="Login-Elevantus-Informacoes_senha">
+                        <label style={{fontFamily: 'Font-5'}} className="Login-Elevantus-Informacoes_label" for="Senha">&nbsp; Senha</label>
+                        <input style={{fontFamily: 'Font-2'}} className="Login-Elevantus-Informacoes_input" type="password"
+                        placeholder=' ***' value={senha} onChange={e => setSenha(e.target.value)}/>
                     </div>
-
-                    <div>
-                        <button className="Login-Elevantu-Botao" onClick={entrarClink}
-                                disabled={carregando} >ENTRAR</button>
+        
+                    <div className="Login-Elevantus-Informacoes_botao">
+                        <button style={{fontFamily: 'Font-1'}} onClick={entrarClink}
+                                disabled={carregando}>ENTRAR</button>
                     </div>
-
                 </div>
-
-                </div>
+        
+            </div>
+            
         </main>
     )
 
