@@ -31,7 +31,7 @@ export default function Index(){
                                   Plano Essencial /
                                   Plano Premiun) */}  
                                        
-        <section styled=" background-color:#f4f4f4;" class="Faixa-2-Elevantus">
+        <section styled=" background-color:#f4f4f4;" className="Faixa-2-Elevantus">
 
                 <div className="Faixa-2-Elevantus-Titulo_e_Alter">
                     <h2 className="Faixa-2-Elevantus-Titulo">Planos</h2>
@@ -40,14 +40,14 @@ export default function Index(){
 
                 {/* Plano */}
 
-                <div  class="Faixa-2-Elevantus-Planos">
+                <div  className="Faixa-2-Elevantus-Planos">
 
 
                 {/*  Plano Básico */}
 
-                <div class="Faixa-2-Elevantus-Plano_Basico">
+                <div className="Faixa-2-Elevantus-Plano_Basico">
                     
-                        <div class="Faixa-2-Elevantus-Planos_Tipo_e_Valor_Basico">
+                        <div className="Faixa-2-Elevantus-Planos_Tipo_e_Valor_Basico">
                             <h3 styled="color:#333333;" 
                                 className="Faixa-2-Elevantus-Planos_Tipo"> &nbsp; BÁSICO</h3>
                             <h3 styled="color:#333333;"
@@ -97,7 +97,7 @@ export default function Index(){
                 
                 {/* Plano Essencial */}
 
-                <div class="Faixa-2-Elevantus-Plano_Essencial">
+                <div className="Faixa-2-Elevantus-Plano_Essencial">
 
                         <div className="Faixa-2-Elevantus-Planos_Tipo_e_Valor_Essencial">
                         
@@ -151,9 +151,9 @@ export default function Index(){
 
                 {/* Plano Premiun */}
 
-                <div class="Faixa-2-Elevantus-Plano_Premiun">
+                <div className="Faixa-2-Elevantus-Plano_Premiun">
                     
-                        <div class="Faixa-2-Elevantus-Planos_Tipo_e_Valor_Premiun">
+                        <div className="Faixa-2-Elevantus-Planos_Tipo_e_Valor_Premiun">
 
                             <h3 styled="color:rgb(255, 255, 255);"
                                 className="Faixa-2-Elevantus-Planos_Tipo_P">PREMIUN</h3>
@@ -215,7 +215,7 @@ export default function Index(){
 
             
 
-            <div class="Faixa-3-Elevantus-Imagens_Aparelhos_e_Esteiras">
+            <div className="Faixa-3-Elevantus-Imagens_Aparelhos_e_Esteiras">
 
                 <img className="Faixa-3-Elevantus-Imagem_Aparelhos"
                         src="/image/Aparelhos-Faixa3.jfif" alt='aparelhos'/>

@@ -1,4 +1,4 @@
-import { cadastrarCliente } from '../../api/clienteApi';
+import { cadastrarCliente, alterarCliente } from '../../api/clienteApi';
 import storage from 'local-storage'
 
 import './index.scss';
@@ -22,12 +22,20 @@ export default function Index(){
     const [treino, setTreino] = useState('');
     const [dia, setDia] = useState('');
     const [horario, setHorario] = useState('');
+    const [id, setId] = useState(0);
 
     async function salvarClick(){
         try{
             const usuario = storage('usuario-logado').id;
 
-            const resposta = await cadastrarCliente(nome, plano, cpf, genero, nascimento, altura, peso, telefone, objetivo, Observacao, treino, dia, horario, usuario)
+            if(id === 0){
+
+                const resposta = await cadastrarCliente(nome, plano, cpf, genero, nascimento, altura, peso, telefone, objetivo, Observacao, treino, dia, horario, usuario);
+                setId(resposta.id);
+                
+            } else {
+                await alterarCliente(id, nome, plano, cpf, genero, nascimento, altura, peso, telefone, objetivo, Observacao, treino, dia, horario, usuario);
+             }
 
             toast.dark('Cliente Cadastrado com sucesso');
         } catch(err){
@@ -151,8 +159,10 @@ export default function Index(){
                     </div>
 
                         <div className='botoes-posicao'>
-                            <button style={{fontFamily: 'Font-1', padding:'1.5em 4em', borderRadius: '0.25em'}} onClick={salvarClick}
-                             className='botao-de-salvar'>SALVAR</button>
+                            <button style={{fontFamily: 'Font-1', padding:'1.5em 4em', borderRadius: '0.25em'}}
+                             onClick={salvarClick} className='botao-de-salvar'>SALVAR</button>&nbsp; &nbsp; &nbsp;
+
+
                         </div>
 
                 </div>
