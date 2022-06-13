@@ -78,37 +78,6 @@ export async function buscarTodosClietes(){
 
 
 
-//Busca de cliente por nome
-export async function buscarPorNome(nome) {
-    const comando = 
-       ` SELECT id_cliente			            			id,
-                nm_cliente			            			nome,
-                ds_plano			            			plano,
-                ds_cpf				            			cpf,
-                ds_genero			            			genero,
-                date_format(dt_nascimento, '%d/%m/%Y')      nasciemento,
-                nr_altura			            			altura,
-                nr_peso				            			peso,
-                nr_telefone			            			telefone,
-                ds_objetivo			            			objetivo,
-                ds_observacao		            			observacao,
-                ds_treino_da_semana	            			treino,
-                ds_dia_da_semana	            			dia,	
-                time_format(hr_horario, '%Hh%m')			horario  
-           FROM tb_cliente
-          WHERE nm_cliente			like ? `;
-
-    const [linhas] = await conexao.query(comando, [`%${nome}%`]);
-    return linhas;
-}
-
-
-
-
-
-
-
-
 //Busca de cliente por ID
 export async function buscarPorId(id) {
     const comando = 

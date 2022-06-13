@@ -176,6 +176,27 @@
         text-decoration: none;
     
     }
+
+    .botao-de-novo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family:'Font-1';
+        font-size: 1.1em;
+
+        margin-left: 3.2em;
+    
+        background-color: black;
+    
+        padding: 1.2em 3em ;
+    
+        border-radius: 0.25em;
+    
+        color: white;
+        text-decoration: none;
+    }
+
+    
     
     
     .botao-de-salvar:hover{
@@ -183,6 +204,17 @@
         cursor: pointer;
         background-color: #ff5724;
         transition:all 0.3s ease;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    .botao-de-novo:hover{
+
+        cursor: pointer;
+        background-color: #505050;
+        color:white;
+        transition:all 0.8s ease;
         -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
         transform: scale(0.9);

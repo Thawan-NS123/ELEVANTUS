@@ -30,7 +30,11 @@
 
 .pagina-consultar{
 
-    overflow-x: hidden;
+    overflow-x: hidden; 
+
+    background-color: #c4c4c4;
+    height: 100vh;
+    padding: 3em;
 
     *{
         margin: 0px;
@@ -40,7 +44,7 @@
     }
     
     .titulo-da-consulta{
-        font-size: 70px ;
+        font-size: 50px ;
         font-family: 'Font-1';
     }
     
@@ -76,7 +80,7 @@
     }
 
     .input-Medio-BuscarNome{
-        width: 1200px;
+        width: 1000px;
         border-radius: 5px;
         border-style: none;
         height: 50px;
@@ -85,6 +89,31 @@
         margin-left: 0em;
         outline: none;
         font: 15px 'Font-1';
+    }
+
+    button{
+        font-family:'Font-1';
+        font-size: 1.1em;
+    
+        background-color: #ff3d00;
+    
+        padding: 0.2em 2.5em ;
+
+        margin-top: 0.5em;
+    
+        border-radius: 0.25em;
+    
+        color: white;
+        text-decoration: none;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: #ff5724;
+        transition:all 0.3s ease;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
     }
     
     .caixa-grande{
@@ -101,1028 +130,65 @@
     
     .caixa-input{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
         margin-top: 30px;    
     }
+
+    input:hover{
+        cursor: pointer;
+    }
+
+    .conteudo-consulta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     
-    .input-configuracao{
+    table, th{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-collapse: collapse;
+    
+        margin-left: 0em;
+        margin-top: 5em;
+    } 
+    
+    th, td{
+        padding: 10px 50px 10px 50px;
+    }
+
+    .configuracoes {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        padding: 0px 60px;
-        font: 15px Font-1;
     }
-    
-    .input-Pequeno{
-        width: 350px;
-        border-radius: 5px;
-        border-style: none;
-        height: 50px;
-        margin-top: 10px;
-        padding: 0px 10px;
-        outline: none;
-        font: 15px Font-1;
-    }
-    
-    .input-Medio{
-        width: 550px;
-        border-radius: 5px;
-        border-style: none;
-        height: 50px;
-        padding: 0px 10px;
-        margin-top: 10px;
-        outline: none;
-        font: 15px Font-1;
-    }
-    
-    .input-Grande{
-        width: 1160px;
-        border-radius: 5px;
-        border-style: none;
-        height: 50px;
-        padding: 0px 10px;
-        margin: 10px 0px;
-        outline: none;
-        font: 20px Font-1;
-    }
-    
-    .caixa-de-texto-media{
-        width: 550px;
-        border-radius: 5px;
-        border-style: none;
-        height: 200px;
-        margin-top: 10px;
-        padding: 10px 10px;
-        outline: none;
-        font: 20px Font-1;
-    }
-    
-    .caixa-de-texto-grande{
-        width: 1160px;
-        border-radius: 5px;
-        border-style: none;
-        height: 200px;
-        margin: 10px 0px;
-        padding: 10px 10px;
-        outline: none;
-        font: 50px Font-1;
-    }
-    
-    .botões-posicao{
-        text-align: center;
-        margin-top: 50px;
-    }
-    
-    .botao-de-salvar{
-        margin-right: 2em;
 
-        font-family:'Font-1';
-        font-size: 1.1em;
+    th{
+        color: #fff;
+    }
+
+    td{
+        font-size: 1em;
+        font-family:'Font-5' ;
+    }
     
+    thead{
         background-color: #ff3d00;
-    
-        padding: 1em 3em ;
-    
-        border-radius: 0.25em;
-    
-        color: white;
-        text-decoration: none;
-    
     }
     
     
-    .botao-de-salvar:hover{
+    tbody:hover{
+        background-color: rgb(230, 229, 229);
         cursor: pointer;
-        background-color: #ff5724;
-
-        cursor: pointer;
-        background-color: #ff5724;
-        transition:all 0.3s ease;
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
     }
     
-    .botao-de-descartar{
-        border: white;
+    .image-1{
+        margin-right: 15px;
     }
     
-    @media (min-width: 428px) and (max-width: 719px){
-        .titulo-da-consulta{
-            font: 40px titulo;
-        }
-            
-        .label-texto{
-            font: 12px titulo;
-            position: absolute;
-            margin-top: -5px;
-            color: #000
-        }
-        
-        .logo-user{
-            height: 90px;
-        }
-        
-        .consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        .config-consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 380px;
-            padding: 0px 10px;
-        }
-        
-        .divprincipal{
-            background-color: #c4c4c4;
-            padding: 40px 0px;
-            margin: 0px 10px;
-     
-        }
-        
-        .caixa-dist{
-            padding-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .caixa-input{
-            display: flex;
-            flex-direction: column;
-            margin-top: 30px;    
-        }
-        
-        .input-configuracao{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0px 0px;
-            font: 15px titulo;
-        }
-        
-        .input-Pequeno{
-            width: 350px;
-            border-radius: 5px;
-            border-style: none;
-            height: 30px;
-            margin-top: 10px;
-            padding: 0px 10px;
-            outline: none;
-            font: 18px texto;
-        }
-        
-        .input-Medio{
-            width: 350px;
-            border-radius: 5px;
-            border-style: none;
-            height: 30px;
-            padding: 0px 10px;
-            margin-top: 10px;
-            outline: none;
-            font: 18px texto;
-        }
-        
-        .input-Grande{
-            width: 350px;
-            border-radius: 5px;
-            border-style: none;
-            height: 30px;
-            padding: 0px 10px;
-            margin: 10px 0px;
-            outline: none;
-            font: 18px texto;
-        }
-        
-        .caixa-de-texto-media{
-            width: 350px;
-            border-radius: 5px;
-            border-style: none;
-            height: 150px;
-            margin-top: 10px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .caixa-de-texto-grande{
-            width: 350px;
-            border-radius: 5px;
-            border-style: none;
-            height: 150px;
-            margin: 10px 0px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .botoes-posicao{
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        .botao-de-salvar{
-            padding: 20px 60px;
-            border-radius: 25px;
-            background-color: #f24822;
-            color: #ffffff;
-            font: 15px titulo;
-        }
-        
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
-        }
+    tbody:nth-child(even) {
+        background-color: #f8f8f8;
     }
-    
-    @media (min-width: 720px) and (max-width:1023px){
-        .titulo-da-consulta{
-            font: 40px titulo;
-        }
-        
-        .label-texto{
-            font: 12px titulo;
-            position: absolute;
-            margin-top: -5px;
-            color: #000
-        }
-        
-        .logo-user{
-            height: 90px;
-        }
-        
-        .consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        .config-consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 600px;
-        }
-        
-        .divprincipal{
-            background-color: #c4c4c4;
-            padding: 40px 0px;
-            margin: 0px 10px;
-            width: 700px;
-        
-        }
-        
-        .caixa-dist{
-            padding-top: 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .inpgeral{
-            border-radius: 5px;
-            border-style: none;
-            height: 40px;
-            margin-top: 10px;
-        }
-        
-        .caixa-input{
-            display: flex;
-            flex-direction: column;
-            margin-top: 10px;    
-        }
-        
-        
-        .input-configuracao{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 0px 40px;
-            font: 15px titulo;
-        }
-        
-        .input-Pequeno{
-            width:170px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            margin-top: 10px;
-            padding: 0px 10px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .input-Medio{
-            width: 270px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            padding: 0px 10px;
-            margin-top: 10px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .input-Grande{
-            width: 600px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            padding: 0px 10px;
-            margin: 10px 0px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .caixa-de-texto-media{
-            width: 270px;
-            border-radius: 5px;
-            border-style: none;
-            height: 200px;
-            margin-top: 10px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .caixa-de-texto-grande{
-            width: 600px;
-            border-radius: 5px;
-            border-style: none;
-            height: 200px;
-            margin: 10px 0px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .botoes-posicao{
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        .botao-de-salvar{
-            padding: 20px 60px;
-            border-radius: 25px;
-            background-color: #f24822;
-            color: #ffffff;
-            font: 15px titulo;
-        }
-    
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
-        }
-    }
-    
-    @media (min-width: 1024px) and (max-width:1279px){
-        .titulo-da-consulta{
-            font: 40px titulo;
-        }
-        
-        .label-texto{
-            font: 12px titulo;
-            position: absolute;
-            margin-top: -5px;
-            color: #000
-        }
-        
-        .logo-user{
-            height: 90px;
-        }
-        
-        .consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        
-        .config-consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 900px;
-        }
-        
-        .divprincipal{
-            background-color: #c4c4c4;
-            padding: 40px 0px;
-            margin: 0px 10px;
-            width: 1000px;
-        
-        }
-        
-        .caixa-dist{
-            padding-top: 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        
-        .caixa-input{
-            display: flex;
-            flex-direction: column;
-            margin-top: 10px;    
-        }
-        
-        
-        .input-configuracao{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 0px 40px;
-            font: 15px titulo;
-        }
-        
-        .input-Pequeno{
-            width:250px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            margin-top: 10px;
-            padding: 0px 10px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .input-Medio{
-            width: 400px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            padding: 0px 10px;
-            margin-top: 10px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .input-Grande{
-            width: 900px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            padding: 0px 10px;
-            margin: 10px 0px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .caixa-de-texto-media{
-            width: 400px;
-            border-radius: 5px;
-            border-style: none;
-            height: 200px;
-            margin-top: 10px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .caixa-de-texto-grande{
-            width: 900px;
-            border-radius: 5px;
-            border-style: none;
-            height: 200px;
-            margin: 10px 0px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .botoes-posicao{
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        .botao-de-salvar{
-            padding: 20px 60px;
-            border-radius: 25px;
-            background-color: #f24822;
-            color: #ffffff;
-            font: 15px titulo;
-        }
-    
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
-        }
-    }
-    
-    @media (min-width: 1280px) and (max-width:1366px){
-        .titulo-da-consulta{
-            font: 40px titulo;
-        }
-        
-        .label-texto{
-            font: 12px titulo;
-            position: absolute;
-            margin-top: -5px;
-            color: #000
-        }
-        
-        .logo-user{
-            height: 90px;
-        }
-        
-        .consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        .config-consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 1160px;
-        }
-        
-        .divprincipal{
-            background-color: #c4c4c4;
-            padding: 40px 0px;
-            margin: 0px 80px;
-        
-        }
-        
-        .caixa-dist{
-            padding-top: 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .inpgeral{
-            border-radius: 5px;
-            border-style: none;
-            height: 40px;
-            margin-top: 10px;
-        }
-        
-        .caixa-input{
-            display: flex;
-            flex-direction: column;
-            margin-top: 30px;    
-        }
-        
-        
-        .input-configuracao{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 0px 60px;
-            font: 15px titulo;
-        }
-        
-        .input-Pequeno{
-            width: 350px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            margin-top: 10px;
-            padding: 0px 10px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .input-Medio{
-            width: 550px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            padding: 0px 10px;
-            margin-top: 10px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .input-Grande{
-            width: 1160px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            padding: 0px 10px;
-            margin: 10px 0px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .caixa-de-texto-media{
-            width: 550px;
-            border-radius: 5px;
-            border-style: none;
-            height: 200px;
-            margin-top: 10px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .caixa-de-texto-grande{
-            width: 1160px;
-            border-radius: 5px;
-            border-style: none;
-            height: 200px;
-            margin: 10px 0px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .botoes-posicao{
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        .botao-de-salvar{
-            padding: 20px 60px;
-            border-radius: 25px;
-            background-color: #f24822;
-            color: #ffffff;
-            font: 15px titulo;
-        }
-    
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
-        }
-    }
-    
-    @media (min-width: 1367px) and (max-width:1440px){
-        .titulo-da-consulta{
-            font: 40px titulo;
-        }
-           
-        .label-texto{
-            font: 12px titulo;
-            position: absolute;
-            margin-top: -5px;
-            color: #000
-        }
-        
-        .logo-user{
-            height: 90px;
-        }
-        
-        .consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-    
-        .config-consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 1160px;
-        }
-        
-        .divprincipal{
-            background-color: #c4c4c4;
-            padding: 40px 0px;
-            margin: 0px 80px;
-        
-        }
-        
-        .caixa-dist{
-            padding-top: 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .inpgeral{
-            border-radius: 5px;
-            border-style: none;
-            height: 40px;
-            margin-top: 10px;
-        }
-        
-        .caixa-input{
-            display: flex;
-            flex-direction: column;
-            margin-top: 30px;    
-        }
-        
-        
-        .input-configuracao{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 0px 60px;
-            font: 15px titulo;
-        }
-        
-        .input-Pequeno{
-            width: 350px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            margin-top: 10px;
-            padding: 0px 10px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .input-Medio{
-            width: 550px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            padding: 0px 10px;
-            margin-top: 10px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .input-Grande{
-            width: 1160px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            padding: 0px 10px;
-            margin: 10px 0px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .caixa-de-texto-media{
-            width: 550px;
-            border-radius: 5px;
-            border-style: none;
-            height: 200px;
-            margin-top: 10px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .caixa-de-texto-grande{
-            width: 1160px;
-            border-radius: 5px;
-            border-style: none;
-            height: 200px;
-            margin: 10px 0px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .botoes-posicao{
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        .botao-salvar{
-            padding: 20px 60px;
-            border-radius: 25px;
-            background-color: #f24822;
-            color: #ffffff;
-            font: 15px titulo;
-        }
-    
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
-        }
-    }
-    
-    @media (min-width: 1441px){
-        .titulo-da-consulta{
-            font: 40px titulo;
-        }
-        
-        
-        .label-texto{
-            font: 12px titulo;
-            position: absolute;
-            margin-top: -5px;
-            color: #000
-        }
-    
-        .logo-user{
-            height: 90px;
-        }
-        
-        .consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        .config-consultaefoto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 80%;
-        }
-        
-        .divprin{
-            background-color: #c4c4c4;
-            padding: 40px 0px;
-            margin: 0px 80px;
-        
-        }
-        
-        .caixa-dist{
-            padding-top: 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .caixa-grande{
-            width: 100px;
-        
-        }
-        
-        .inpgeral{
-            border-radius: 5px;
-            border-style: none;
-            height: 40px;
-            margin-top: 10px;
-        }
-        
-        .caixa-input{
-            display: flex;
-            flex-direction: column;
-            margin-top: 30px;    
-        }
-        
-        
-        .input-configuracao{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 0px 0px;
-            font: 15px titulo;
-        }
-        
-        .input-Pequeno{
-            max-width: 350px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            margin-top: 10px;
-            padding: 0px 10px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .input-Medio{
-            width: 550px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            padding: 0px 10px;
-            margin-top: 10px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .input-Grande{
-            width: 1160px;
-            border-radius: 5px;
-            border-style: none;
-            height: 50px;
-            padding: 0px 10px;
-            margin: 10px 0px;
-            outline: none;
-            font: 20px texto;
-        }
-        
-        .caixa-de-texto-media{
-            width: 550px;
-            border-radius: 5px;
-            border-style: none;
-            height: 200px;
-            margin-top: 10px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .caixa-de-texto-grande{
-            width: 1160px;
-            border-radius: 5px;
-            border-style: none;
-            height: 200px;
-            margin: 10px 0px;
-            padding: 10px 10px;
-            outline: none;
-            font: 16px texto;
-        }
-        
-        .botoes-posicao{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            margin-top: 50px;
-           
-        }
-        
-        .botao-de-salvar{
-            padding: 20px 60px;
-            border-radius: 25px;
-            background-color: #f24822;
-            color: #ffffff;
-            font: 15px titulo;
-        }
-    
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
-        }
-    }
-    
-    @media (min-width: 428px) and (max-width: 719px){
-        .fundo-basico{
-            background-color: #c4c4c4;
-            display: flex;
-            flex-direction: column;
-            display: flex;
-            align-items: center;
-        }
-    }
-    
-    
-    @media (min-width:720px) and (max-width:1023px){
-        .fundo-basico{
-            background-color: #c4c4c4;
-            display: flex;
-            flex-direction: column;
-            display: flex;
-            
-            align-items: center;
-        }
-    }
-    
-    @media (min-width:1024px) and (max-width:1279px){
-        .fundo-basico{
-            background-color: #c4c4c4;
-            display: flex;
-            flex-direction: column;
-            display: flex;
-            
-            align-items: center;
-        }
-    }
-    
-    @media (min-width:1280px) and (max-width:1366px){
-        .fundo-basico{
-            background-color: #c4c4c4;
-            display: flex;
-            flex-direction: column;
-            display: flex;
-            
-            align-items: center;
-        }
-    }
-    
-    @media (min-width:1367px) and (max-width:1440px){
-        .fundo-basico{
-            background-color: #c4c4c4;
-            display: flex;
-            flex-direction: column;
-            display: flex;
-            
-            align-items: center;
-        }
-    }
-    
-    @media (min-width:1441px){
-        .fundo-basico{
-            background-color: #c4c4c4;
-            display: flex;
-            flex-direction: column;
-            display: flex;
-            align-items: center;
-        }
-    }
-    
-
 }

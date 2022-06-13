@@ -1,4 +1,4 @@
-import { inserirCliente, buscarPorId, buscarPorNome, alterarCliente, removerCliente, buscarPorCpf, buscarTodosClietes } from '../repository/clienteRepository.js'
+import { inserirCliente, buscarPorId, alterarCliente, removerCliente, buscarPorCpf, buscarTodosClietes } from '../repository/clienteRepository.js'
 
 import{ Router } from 'express'
 
@@ -85,26 +85,6 @@ server.get('/cliente/busca' , async (req, resp) => {
             resp.status(404).send(['Cliente não encontrado']) ;
         else
             resp.send(resposta); 
-    } catch (err) {
-        resp.status(400).send({
-            erro:err.message
-        })
-    }
-})
-
-
-
-//Busca de cliente por nome
-server.get('/cliente/busca' , async (req, resp) => {
-    try {
-        const { nome } = req.query;
-        const resposta = await buscarPorNome(nome);
-
-        if(resposta.length == 0) 
-            resp.status(404).send(['Cliente não encontrado']) ;
-        else
-            resp.send(resposta); 
-
     } catch (err) {
         resp.status(400).send({
             erro:err.message

@@ -23,9 +23,9 @@ root.render(
     <BrowserRouter>
     <ToastContainer/>
         <Routes>
-            <Route path='/' element={ <LandingPage /> }/>
-            <Route path='/login' element={ <Login /> }/>
-            <Route path='/menu' element={ <Menu /> }/>
+            <Route path='/'         element={ <LandingPage /> }/>
+            <Route path='/login'    element={ <Login /> }/>
+            <Route path='/menu'     element={ <Menu /> }/>
             <Route path='/cadastro' element={ < Cadastro /> }/>
             <Route path='/consulta' element={ <Consulta /> }/>       
         </Routes>

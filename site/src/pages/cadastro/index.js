@@ -24,6 +24,8 @@ export default function Index(){
     const [horario, setHorario] = useState('');
     const [id, setId] = useState(0);
 
+
+
     async function salvarClick(){
         try{
             const usuario = storage('usuario-logado').id;
@@ -41,6 +43,23 @@ export default function Index(){
         } catch(err){
             toast.error(err.message);
         }
+    }
+
+    function novoClick() {
+        setId(0);
+        setNome('');
+        setPlano('');
+        setCpf('');
+        setGenero('');
+        setNascimento('');
+        setAltura();
+        setPeso();
+        setTelefone('');
+        setObjetivo('');
+        setObservacao('');
+        setTreino('');
+        setDia('');
+        setHorario('');
     }
 
     return(
@@ -161,8 +180,8 @@ export default function Index(){
                         <div className='botoes-posicao'>
                             <button style={{fontFamily: 'Font-1', padding:'1.5em 4em', borderRadius: '0.25em'}}
                              onClick={salvarClick} className='botao-de-salvar'>SALVAR</button>&nbsp; &nbsp; &nbsp;
-
-
+                            <button style={{fontFamily: 'Font-1', borderRadius: '0.25em'}}
+                             onClick={novoClick} className='botao-de-novo'>NOVO</button>
                         </div>
 
                 </div>

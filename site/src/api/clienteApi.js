@@ -54,9 +54,12 @@ const resposta = await api.put(`/cliente/${id}`,{
 return resposta.data;
 }   
 
-
+export async function listarTodosFilmes(){
+    const resposta = await api.get('/cliente');
+    return resposta.data;
+}
 
 export async function buscarPorCpf(cpf){
-    const resposta = await api.get(`/cliente/buscar?cpf=${cpf}`);
+    const resposta = await api.get(`/cliente/busca?cpf=${cpf}`);
     return resposta.data;
 }
