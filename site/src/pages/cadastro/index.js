@@ -104,16 +104,16 @@ export default function Index(){
                         </div>
                     </div>
 
-                    <div class='input-configuracao'>
+                    <div className='input-configuracao'>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='text' className='label-texto'>&nbsp;&nbsp; Nome Completo</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='text' className='label-texto'>&nbsp;&nbsp; Nome Completo</label>
                             <input style={{fontFamily: 'Font-2'}} type='text' className='input-Medio'
                             value={nome} onChange={e=> setNome(e.target.value)}/>
                         </div>
                         
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='text' className='label-texto'>&nbsp;&nbsp; Plano </label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='text' className='label-texto'>&nbsp;&nbsp; Plano </label>
                             <input style={{fontFamily: 'Font-2'}} type='text' className='input-Medio'
                             value={plano} onChange={e=> setPlano(e.target.value)}/>
                         </div>
@@ -123,19 +123,19 @@ export default function Index(){
                     <div className='input-configuracao'>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='text' className='label-texto'>&nbsp;&nbsp; CPF</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='text' className='label-texto'>&nbsp;&nbsp; CPF</label>
                             <input style={{fontFamily: 'Font-2'}} type='text' className='input-Pequeno'
                             value={cpf} onChange={e=> setCpf(e.target.value)}/>
                         </div>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='text' classname='label-texto'>&nbsp;&nbsp; Gênero</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='text' classname='label-texto'>&nbsp;&nbsp; Gênero</label>
                             <input style={{fontFamily: 'Font-2'}} type='text' className='input-Pequeno'
                             value={genero} onChange={e=> setGenero(e.target.value)}/>
                         </div>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='date' className='label-texto'>&nbsp;&nbsp; Data de nascimento</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='date' className='label-texto'>&nbsp;&nbsp; Data de nascimento</label>
                             <input style={{fontFamily: 'Font-2'}} type='date'  className='input-Pequeno'
                             value={nascimento} onChange={e=> setNascimento(e.target.value)}/>
                         </div>
@@ -144,19 +144,19 @@ export default function Index(){
                     <div className='input-configuracao'>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='text'className='label-texto'>&nbsp;&nbsp; Altura</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='text'className='label-texto'>&nbsp;&nbsp; Altura</label>
                             <input style={{fontFamily: 'Font-2'}} type='number' className='input-Pequeno'
                             value={altura} onChange={e=> setAltura(e.target.value)}/>
                         </div>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='text' className='label-texto'>&nbsp;&nbsp; Peso</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='text' className='label-texto'>&nbsp;&nbsp; Peso</label>
                             <input style={{fontFamily: 'Font-2'}} type='number' className='input-Pequeno'
                             value={peso} onChange={e=> setPeso(e.target.value)}/>
                         </div>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='text' className='label-texto'>&nbsp;&nbsp; Telefone</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='text' className='label-texto'>&nbsp;&nbsp; Telefone</label>
                             <input style={{fontFamily: 'Font-2'}} type='tel' className='input-Pequeno' 
                             value={telefone} onChange={e=> setTelefone(e.target.value)}/>
                         </div>
@@ -166,13 +166,13 @@ export default function Index(){
                     <div className='input-configuracao'>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='object' className='label-texto'>&nbsp;&nbsp; Objetivos</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='object' className='label-texto'>&nbsp;&nbsp; Objetivos</label>
                             <textarea style={{fontFamily: 'Font-2', fontSize: '1.5em'}} name='objetivos' className='caixa-de-texto-media'
                             value={objetivo} onChange={e=> setObjetivo(e.target.value)}/>
                         </div>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='object' className='label-texto'>&nbsp;&nbsp; Observação</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='object' className='label-texto'>&nbsp;&nbsp; Observação</label>
                             <textarea style={{fontFamily: 'Font-2', fontSize: '1.5em'}} name='observacoes' className='caixa-de-texto-media'
                             value={Observacao} onChange={e=> setObservacao(e.target.value)}/>
                         </div>
@@ -182,7 +182,7 @@ export default function Index(){
                     <div className='input-configuracao'>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='object' className='label-texto'>&nbsp;&nbsp; Treino da semana</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='object' className='label-texto'>&nbsp;&nbsp; Treino da semana</label>
                             <textarea style={{fontFamily: 'Font-2' , fontSize: '1.5em'}} name='treinoSemana' className='caixa-de-texto-grande'
                             value={treino} onChange={e=> setTreino(e.target.value)}/>
                         </div>
@@ -192,13 +192,13 @@ export default function Index(){
                     <div className='input-configuracao'>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='text' className='label-texto'>&nbsp;&nbsp; Dias da semana</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='text' className='label-texto'>&nbsp;&nbsp; Dias da semana</label>
                             <input style={{fontFamily: 'Font-2'}} type='text' className='input-Medio'
                             value={dia} onChange={e=> setDia(e.target.value)}/>                     
                         </div>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} for='text' className='label-texto'>&nbsp;&nbsp; Horário</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='text' className='label-texto'>&nbsp;&nbsp; Horário</label>
                             <input style={{fontFamily: 'Font-2'}} type='time' className='input-Medio'
                             value={horario} onChange={e=> setHorario(e.target.value)}/>
                         </div> 

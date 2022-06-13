@@ -59,7 +59,7 @@ export default function Index(){
         <main className="Page-Login">
         <LoadingBar color='#ff3d00' ref={ref} />
 
-            <div class="Login-Elevantus">
+            <div className="Login-Elevantus">
         
                 <img src="/image/img-login.jpg" className='Login-Elevantus-Imagem_login' alt="Image-Login"/>
         

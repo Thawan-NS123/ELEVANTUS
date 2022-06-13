@@ -30,12 +30,10 @@ export default function Index(){
         <main className='pagina-menu'>
                 <section className='faixa-menu'>
                     <div className="parte-esquerda">
-
                         <div className="texto-menu">
                             <p className="paragrafo-menu">Bem vindo a area do menu, para onde você deseja ir ?</p>
                             <p onClick={sairClick} className="paragrafo-sair">Voltar</p>
-                        </div>
-                        
+                        </div>                        
                     </div>
                     <div className="parte-direita">
 

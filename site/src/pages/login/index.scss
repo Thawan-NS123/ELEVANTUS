@@ -19,7 +19,7 @@
     }
     
     .Login-Elevantus-Imagem_login{
-        width: 115vh;
+        width: 70vh;
         height: 100vh;
     }
     
@@ -96,3 +96,9 @@
 }
 
 
+@media (min-width: 1020) and (max-width: 1280px){
+    .Login-Elevantus-Imagem_login{
+        width: 115vh;
+        height: 100vh;
+    }
+}

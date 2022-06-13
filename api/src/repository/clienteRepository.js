@@ -56,7 +56,7 @@ export async function buscarTodosClietes(){
                 ds_plano			            			plano,
                 ds_cpf				            			cpf,
                 ds_genero			            			genero,
-                date_format(dt_nascimento, '%d/%m/%Y')      nasciemento,
+                dt_nascimento                               nasciemento,
                 nr_altura			            			altura,
                 nr_peso				            			peso,
                 nr_telefone			            			telefone,
@@ -64,7 +64,7 @@ export async function buscarTodosClietes(){
                 ds_observacao		            			observacao,
                 ds_treino_da_semana	            			treino,
                 ds_dia_da_semana	            			dia,	
-                time_format(hr_horario, '%Hh%m')			horario  
+                hr_horario, '%Hh%m'			                horario  
            FROM tb_cliente`;
 
        const [resposta] = await conexao.query(comando)
@@ -86,7 +86,7 @@ export async function buscarPorId(id) {
             ds_plano			     				plano,
             ds_cpf									cpf,
             ds_genero			     				genero,
-            date_format(dt_nascimento, '%d/%m/%Y')  nascimento,
+            dt_nascimento                           nascimento,
             nr_altura			     				altura,
             nr_peso									peso,
             nr_telefone								telefone,
@@ -94,7 +94,7 @@ export async function buscarPorId(id) {
             ds_observacao		     				observacao,
             ds_treino_da_semana	     				treino,
             ds_dia_da_semana	     				dia,
-            time_format(hr_horario, '%Hh%m')		horario         
+            hr_horario		                        horario         
        FROM tb_cliente
       WHERE id_cliente = ?
     `;
@@ -120,7 +120,7 @@ export async function buscarPorCpf(cpf) {
             ds_plano			     				plano,
             ds_cpf									cpf,
             ds_genero			     				genero,
-            date_format(dt_nascimento, '%d/%m/%Y')  nascimento,
+            dt_nascimento                           nascimento,
             nr_altura			     				altura,
             nr_peso									peso,
             nr_telefone								telefone,
@@ -128,7 +128,7 @@ export async function buscarPorCpf(cpf) {
             ds_observacao		     				observacao,
             ds_treino_da_semana	     				treino,
             ds_dia_da_semana	     				dia,
-            time_format(hr_horario, '%Hh%m')		horario         
+            hr_horario                              horario         
        FROM tb_cliente
       WHERE ds_cpf			like ? 
     `;

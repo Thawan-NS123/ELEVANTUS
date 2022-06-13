@@ -72,6 +72,7 @@
     .paragrafo-sair{
         font-size: 2em;
         color: white;
+        margin-top: 16em;
     }
 
     .paragrafo-sair:hover{
@@ -82,13 +83,14 @@
     }
     
     .parte-direita{
-        width: 100%;
-        height: 100vh;
+        width: 120vh;
+        height: 150vw;
         background-image: url(../../../public/image/Mulher-fazendo-barra.jpg);
         background-size: center center;
         background-repeat: no-repeat;
-        
-        
+        background-position: 0px 50px;
+        background-size: 60em 55em ;
+        padding-top: 5em;
     }
     
     .perfil-cleiton{
@@ -96,8 +98,6 @@
         flex-direction: row;
         justify-content: end;
         align-items: center;
-        padding: 2em;
-        position: relative;
     }
     
     .nome-cleiton{
@@ -115,7 +115,7 @@
     .botoes-link{
         display: flex;
         flex-direction: row;
-        padding-top: 22em;
+        padding-top: 39em;
         justify-content: center;
         
     }
