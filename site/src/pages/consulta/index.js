@@ -1,14 +1,47 @@
-import { listarTodosFilmes, buscarPorCpf } from '../../api/clienteApi';
+import { listarTodosFilmes, buscarPorCpf, deletarCliente } from '../../api/clienteApi';
 
 import { useEffect, useState } from 'react'
 
+import { confirmAlert } from 'react-confirm-alert'
+
 import './index.scss';
+
+import { toast } from 'react-toastify'
 
 
 export default function Index(){
 
     const [cliente, setCliente] = useState([]);
     const [filtro, setFiltro] = useState('');
+
+
+    async function excluirClienteClick(id, nome) {
+
+        confirmAlert({
+            title: 'Excluir cliente',
+            message: `Deseja excluir o cliente ${nome}`,
+            buttons: [
+                {
+                    label: 'Sim',
+                    onClick: async () => {
+                        const resposta = await deletarCliente(id, nome);
+                        if(filtro === '')
+                        carregarTodosFilmes();
+                        else
+                            filtrar();
+
+                        toast.dark('filme removido');
+                    }
+                },
+                {
+                    label: 'Não',
+                }
+            ]
+        })
+
+        
+    }
+
 
     async function filtrar(){
         const resp = await buscarPorCpf(filtro);
@@ -73,13 +106,14 @@ export default function Index(){
                                     <td>{item.horario}</td>
                                     <td className='configuracoes'>
                                         <img className="image-1" src='/image/lapis-edit.png' width="20px" alt='editar' />
-                                        <img className="image-2" src='/image/table-lixeira.png' width="20px" alt='excluir' />
+                                        <img className="image-2" src='/image/table-lixeira.png' width="20px" alt='excluir' onClick={() => excluirClienteClick(item.id, item.nome)}/>
                                     </td>
                                 </tr>     
                         )}
 
                         
                     </tbody>
+                    
                 </table>
             </div>
         </div>

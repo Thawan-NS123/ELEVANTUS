@@ -63,3 +63,8 @@ export async function buscarPorCpf(cpf){
     const resposta = await api.get(`/cliente/busca?cpf=${cpf}`);
     return resposta.data;
 }
+
+export async function deletarCliente(id) {
+    const resposta = await api.delete(`/cliente/${id}`);
+    return resposta.status;
+}
