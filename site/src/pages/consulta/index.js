@@ -8,11 +8,21 @@ import './index.scss';
 
 import { toast } from 'react-toastify'
 
+import { useNavigate } from 'react-router-dom'
+
 
 export default function Index(){
 
     const [cliente, setCliente] = useState([]);
     const [filtro, setFiltro] = useState('');
+
+    const navigate = useNavigate();
+
+
+    function editarCliente(id) {
+        navigate(`/alterar/${id}`)
+    }
+
 
 
     async function excluirClienteClick(id, nome) {
@@ -30,7 +40,7 @@ export default function Index(){
                         else
                             filtrar();
 
-                        toast.dark('filme removido');
+                        toast.dark('Cliente removido');
                     }
                 },
                 {
@@ -105,7 +115,7 @@ export default function Index(){
                                     <td>{item.dia}</td>
                                     <td>{item.horario}</td>
                                     <td className='configuracoes'>
-                                        <img className="image-1" src='/image/lapis-edit.png' width="20px" alt='editar' />
+                                        <img className="image-1" src='/image/lapis-edit.png' width="20px" alt='editar' onClick={() => editarCliente(item.id)}/>
                                         <img className="image-2" src='/image/table-lixeira.png' width="20px" alt='excluir' onClick={() => excluirClienteClick(item.id, item.nome)}/>
                                     </td>
                                 </tr>     

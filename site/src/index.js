@@ -28,7 +28,10 @@ root.render(
             <Route path='/'         element={ <LandingPage /> }/>
             <Route path='/login'    element={ <Login /> }/>
             <Route path='/menu'     element={ <Menu /> }/>
+
             <Route path='/cadastro' element={ < Cadastro /> }/>
+            <Route path='/alterar/:idParam' element={ < Cadastro /> }/>
+
             <Route path='/consulta' element={ <Consulta /> }/>       
         </Routes>
     </BrowserRouter>

@@ -115,7 +115,7 @@ server.get('/cliente/:id' , async (req, resp) => {
 
 
 //Alterar cliente
-server.put('/cliente/:id' , async (req, resp) => {
+server.put('/cliente/id' , async (req, resp) => {
     try {
         const { id } = req.params;
         const cliente = req.body;

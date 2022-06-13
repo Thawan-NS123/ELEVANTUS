@@ -1,10 +1,12 @@
-import { cadastrarCliente, alterarCliente } from '../../api/clienteApi';
+import { cadastrarCliente, alterarCliente, buscarPorid} from '../../api/clienteApi';
 import storage from 'local-storage'
 
 import './index.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import { toast } from 'react-toastify';
+
 
 
 export default function Index(){
@@ -24,7 +26,32 @@ export default function Index(){
     const [horario, setHorario] = useState('');
     const [id, setId] = useState(0);
 
+    const { idParam } = useParams();
 
+    useEffect(() => {
+        if (idParam) {
+            carregarCliente();
+        }
+    }, [])
+
+    async function carregarCliente() {
+        const resposta = await buscarPorid(idParam);
+        setNome(resposta.nome);
+        setPlano(resposta.plano);
+        setCpf(resposta.cpf);
+        setGenero(resposta.genero);
+        setNascimento(resposta.nascimento.substr(0, 10));
+        setAltura(resposta.altura);
+        setPeso(resposta.peso);
+        setTelefone(resposta.telefone);
+        setObjetivo(resposta.objetivo);
+        setObservacao(resposta.Observacao);
+        setTreino(resposta.treino);
+        setDia(resposta.dia);
+        setHorario(resposta.horario);
+        setId(resposta.id);
+    }
+ 
 
     async function salvarClick(){
         try{

@@ -68,3 +68,8 @@ export async function deletarCliente(id) {
     const resposta = await api.delete(`/cliente/${id}`);
     return resposta.status;
 }
+
+export async function buscarPorid(id) {
+    const resposta = await api.get(`/cliente/${id}`);
+    return resposta.data;
+}
