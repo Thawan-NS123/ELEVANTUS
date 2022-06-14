@@ -1,4 +1,4 @@
-import { inserirCliente, buscarPorId, alterarCliente, removerCliente, buscarPorCpf, buscarTodosClietes } from '../repository/clienteRepository.js'
+import { inserirCliente, buscarPorId, alterarCliente, removerCliente,  buscarTodosClietes, buscarPorNome } from '../repository/clienteRepository.js'
 
 import{ Router } from 'express'
 
@@ -78,8 +78,8 @@ server.get('/cliente', async (req, resp) =>{
 
 server.get('/cliente/busca' , async (req, resp) => {
     try {
-        const { cpf } = req.query;
-        const resposta = await buscarPorCpf(cpf);
+        const { nome } = req.query;
+        const resposta = await buscarPorNome(nome);
 
         if(resposta.length == 0) 
             resp.status(404).send(['Cliente não encontrado']) ;
@@ -115,7 +115,7 @@ server.get('/cliente/:id' , async (req, resp) => {
 
 
 //Alterar cliente
-server.put('/cliente/id' , async (req, resp) => {
+server.put('/cliente/:id' , async (req, resp) => {
     try {
         const { id } = req.params;
         const cliente = req.body;

@@ -16,10 +16,10 @@ export default function Index(){
     const [cpf, setCpf] = useState('');
     const [genero, setGenero] = useState('');
     const [nascimento, setNascimento] = useState('');
-    const [altura, setAltura] = useState();
-    const [peso, setPeso] = useState();
+    const [altura, setAltura] = useState('');
+    const [peso, setPeso] = useState('');
     const [telefone, setTelefone] = useState('');
-    const [objetivo, setObjetivo] = useState();
+    const [objetivo, setObjetivo] = useState('');
     const [Observacao, setObservacao] = useState('');
     const [treino, setTreino] = useState('');
     const [dia, setDia] = useState('');
@@ -61,12 +61,15 @@ export default function Index(){
 
                 const resposta = await cadastrarCliente(nome, plano, cpf, genero, nascimento, altura, peso, telefone, objetivo, Observacao, treino, dia, horario, usuario);
                 setId(resposta.id);
+
+                toast.dark('Cliente Cadastrado com sucesso');
                 
             } else {
                 await alterarCliente(id, nome, plano, cpf, genero, nascimento, altura, peso, telefone, objetivo, Observacao, treino, dia, horario, usuario);
-             }
+                toast.dark('Cliente Alterado com sucesso');
+            }
 
-            toast.dark('Cliente Cadastrado com sucesso');
+            
         } catch(err){
             toast.error(err.message);
         }
@@ -79,8 +82,8 @@ export default function Index(){
         setCpf('');
         setGenero('');
         setNascimento('');
-        setAltura();
-        setPeso();
+        setAltura('');
+        setPeso('');
         setTelefone('');
         setObjetivo('');
         setObservacao('');
@@ -206,7 +209,7 @@ export default function Index(){
 
                         <div className='botoes-posicao'>
                             <button style={{fontFamily: 'Font-1', padding:'1.5em 4em', borderRadius: '0.25em'}}
-                             onClick={salvarClick} className='botao-de-salvar'>SALVAR</button>&nbsp; &nbsp; &nbsp;
+                             onClick={salvarClick} className='botao-de-salvar'>{id === 0 ? 'SALVAR' : "ALTERAR"}</button>&nbsp; &nbsp; &nbsp;
                             <button style={{fontFamily: 'Font-1', borderRadius: '0.25em'}}
                              onClick={novoClick} className='botao-de-novo'>NOVO</button>
                         </div>

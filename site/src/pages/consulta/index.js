@@ -1,4 +1,4 @@
-import { listarTodosFilmes, buscarPorCpf, deletarCliente } from '../../api/clienteApi';
+import { listarTodosFilmes, buscarPorNome, deletarCliente } from '../../api/clienteApi';
 
 import { useEffect, useState } from 'react'
 
@@ -17,6 +17,13 @@ export default function Index(){
     const [filtro, setFiltro] = useState('');
 
     const navigate = useNavigate();
+
+
+    async function filtrar(){
+        const resp = await buscarPorNome(filtro);
+        console.log(resp)
+        setCliente(resp);
+    }
 
 
     function editarCliente(id) {
@@ -53,10 +60,7 @@ export default function Index(){
     }
 
 
-    async function filtrar(){
-        const resp = await buscarPorCpf(filtro);
-        setFiltro(resp);
-    }
+
 
     async function carregarTodosFilmes(){
         const resp = await listarTodosFilmes();
@@ -110,10 +114,10 @@ export default function Index(){
                                 <tr>
                                     <td>{item.id}</td>
                                     <td>{item.nome}</td>
-                                    <td>{item.cpf}</td>
+                                    <td className='Item-CPF'>{item.cpf}</td>
                                     <td>{item.plano}</td>
                                     <td>{item.dia}</td>
-                                    <td>{item.horario}</td>
+                                    <td>{item.horario.substr(0, 5)}</td>
                                     <td className='configuracoes'>
                                         <img className="image-1" src='/image/lapis-edit.png' width="20px" alt='editar' onClick={() => editarCliente(item.id)}/>
                                         <img className="image-2" src='/image/table-lixeira.png' width="20px" alt='excluir' onClick={() => excluirClienteClick(item.id, item.nome)}/>

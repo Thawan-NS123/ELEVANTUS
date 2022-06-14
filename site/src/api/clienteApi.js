@@ -59,8 +59,8 @@ export async function listarTodosFilmes(){
     return resposta.data;
 }
 
-export async function buscarPorCpf(cpf){
-    const resposta = await api.get(`/cliente/busca?cpf=${cpf}`);
+export async function buscarPorNome(nome){
+    const resposta = await api.get(`/cliente/busca?nome=${nome}`);
     return resposta.data;
 }
 

@@ -64,7 +64,7 @@ export async function buscarTodosClietes(){
                 ds_observacao		            			observacao,
                 ds_treino_da_semana	            			treino,
                 ds_dia_da_semana	            			dia,	
-                hr_horario, '%Hh%m'			                horario  
+                hr_horario      			                horario  
            FROM tb_cliente`;
 
        const [resposta] = await conexao.query(comando)
@@ -113,7 +113,7 @@ export async function buscarPorId(id) {
 
 
 //Busca de cliente por CPF
-export async function buscarPorCpf(cpf) {
+export async function buscarPorNome(nome) {
     const comando = 
     `SELECT id_cliente			                    id,
             nm_cliente								nome,
@@ -130,10 +130,10 @@ export async function buscarPorCpf(cpf) {
             ds_dia_da_semana	     				dia,
             hr_horario                              horario         
        FROM tb_cliente
-      WHERE ds_cpf			like ? 
+      WHERE nm_cliente			like ? 
     `;
 
-    const [linhas] = await conexao.query(comando, [`%${cpf}%`]);
+    const [linhas] = await conexao.query(comando, [`%${nome}%`]);
     return linhas;
 }
 
