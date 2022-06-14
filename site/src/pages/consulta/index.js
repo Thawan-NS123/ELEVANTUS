@@ -61,7 +61,6 @@ export default function Index(){
 
 
 
-
     async function carregarTodosFilmes(){
         const resp = await listarTodosFilmes();
         setCliente(resp);

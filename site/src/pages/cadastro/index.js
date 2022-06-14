@@ -45,7 +45,7 @@ export default function Index(){
         setPeso(resposta.peso);
         setTelefone(resposta.telefone);
         setObjetivo(resposta.objetivo);
-        setObservacao(resposta.Observacao);
+        setObservacao(resposta.observacao);
         setTreino(resposta.treino);
         setDia(resposta.dia);
         setHorario(resposta.horario);
@@ -71,7 +71,7 @@ export default function Index(){
 
             
         } catch(err){
-            toast.error(err.message);
+            toast.error(err.response.data.erro);
         }
     }
 

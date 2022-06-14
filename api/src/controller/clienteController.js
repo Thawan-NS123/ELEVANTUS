@@ -9,11 +9,11 @@ const server = Router();
 server.post('/cliente' , async (req, resp) => {
     try {
         const cliente = req.body;
-
+        
         if(!cliente.personal) 
             throw new Error ('Id do personal obrigatório');
 
-        if(!cliente.nome) 
+        if(!cliente.nome.trim()) 
             throw new Error ('Nome do cliente é obrigatório');
 
         if(!cliente.plano) 
@@ -81,9 +81,9 @@ server.get('/cliente/busca' , async (req, resp) => {
         const { nome } = req.query;
         const resposta = await buscarPorNome(nome);
 
-        if(resposta.length == 0) 
-            resp.status(404).send(['Cliente não encontrado']) ;
-        else
+        // if(resposta.length == 0) 
+        //     resp.status(404).send(['Cliente não encontrado']) ;
+        // else
             resp.send(resposta); 
     } catch (err) {
         resp.status(400).send({
@@ -123,7 +123,7 @@ server.put('/cliente/:id' , async (req, resp) => {
         if(!cliente.personal) 
             throw new Error ('Id do personal obrigatório');
 
-        if(!cliente.nome) 
+        if(!cliente.nome.trim()) 
             throw new Error ('Nome do cliente é obrigatório');
 
         if(!cliente.plano) 
