@@ -3,7 +3,7 @@ import storage from 'local-storage'
 
 import './index.scss';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import { toast } from 'react-toastify';
 
@@ -27,6 +27,8 @@ export default function Index(){
     const [id, setId] = useState(0);
 
     const { idParam } = useParams();
+
+    const navegar = useNavigate();
 
     useEffect(() => {
         if (idParam) {
@@ -67,6 +69,7 @@ export default function Index(){
             } else {
                 await alterarCliente(id, nome, plano, cpf, genero, nascimento, altura, peso, telefone, objetivo, Observacao, treino, dia, horario, usuario);
                 toast.dark('Cliente Alterado com sucesso');
+                navegar('/consulta')
             }
 
             

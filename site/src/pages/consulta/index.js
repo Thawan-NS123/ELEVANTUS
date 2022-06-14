@@ -76,16 +76,20 @@ export default function Index(){
 <main className='pagina-consultar'>
 
     <section className='fundo-basico'> {/* Está class esta no common */}
-        
-        {/* A partir daqui são class's no index.css  */} 
-        <div className='divprincipal'>
 
+    <header>
             <div className='consultaefoto'>
                 <div className='config-consultaefoto'> 
                     <h2 style={{fontFamily: 'Font-1'}} className='titulo-da-consulta'>CONSULTA</h2> 
                     <img src='/image/1652835584315 (1).png' className='logo-user' alt='Elevantus'/>
                 </div>
-            </div>
+            </div>     
+    </header>
+        
+        {/* A partir daqui são class's no index.css  */} 
+        <div className='divprincipal'>
+
+
 
             <div className='conteudo-consulta'>
 
