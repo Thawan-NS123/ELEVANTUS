@@ -94,7 +94,7 @@ export default function Index(){
             <div className='conteudo-consulta'>
 
                 <div className='caixa-input'>
-                    <input type='text' placeholder='Buscar por CPF' className='input-Medio-BuscarNome'
+                    <input type='text' placeholder='Buscar por Nome' className='input-Medio-BuscarNome'
                     value={filtro} onChange={e => setFiltro(e.target.value) }/>
                     <button onClick={filtrar}>Buscar</button>
                 </div>

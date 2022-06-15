@@ -32,6 +32,8 @@
 
     overflow-x: hidden;
 
+    
+
     *{
         margin: 0px;
         padding: 0px;
@@ -45,7 +47,7 @@
     }
     
     .divprinipal{
-        background-color: #c4c4c4;
+        background-color: #fa0000;
         padding: 40px 0px;
         margin: 0px 80px;
     }
@@ -55,7 +57,9 @@
         flex-direction: row;
         justify-content: space-between;
         width: 1160px;
+        padding-bottom: 2em;
     }
+    
     
     .label-texto{
         font-size: 12px ;
@@ -66,7 +70,10 @@
     }
     
     .logo-user{
-        height: 90px;
+        height: 200px;
+        width: 100px;
+        background-color: #ff3d00;
+        border-radius: 2em;
     }
     
     .consultaefoto{
@@ -1145,6 +1152,5 @@
     @media (max-width:1280) {
         
     }
-    
 
 }

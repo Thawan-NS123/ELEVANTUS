@@ -14,48 +14,50 @@ server.post('/cliente' , async (req, resp) => {
             throw new Error ('Id do personal obrigatório');
 
         if(!cliente.nome.trim()) 
-            throw new Error ('Nome do cliente é obrigatório');
+            throw new Error ('Nome do cliente não foi preenchido');
 
-        if(!cliente.plano) 
+        if(!cliente.plano.trim()) 
             throw new Error ('Nome do plano é obrigatório');
 
-        if(!cliente.cpf) 
+        if(!cliente.cpf.trim()) 
             throw new Error ('CPF é obrigatório');
 
-        if(!cliente.genero) 
+        if(!cliente.genero.trim()) 
             throw new Error ('Gênero é obrigatório');
 
-        if(cliente.nascimento == undefined) 
+        if(!cliente.nascimento.trim()) 
             throw new Error ('Data de nascimento é obrigatória');
 
-        if(cliente.altura == undefined || cliente.altura < 0) 
+        if(!cliente.altura == undefined || cliente.altura < 0) 
             throw new Error ('Altura obrigatória');
 
-        if(cliente.peso == undefined || cliente.peso < 0) 
+        if(!cliente.peso == undefined || cliente.peso < 0) 
             throw new Error ('Peso obrigatório');
 
-        if(!cliente.telefone) 
+        if(!cliente.telefone.trim()) 
             throw new Error ('Telefone obrigatório');
 
-        if(!cliente.objetivo) 
+        if(!cliente.objetivo.trim()) 
             throw new Error ('Objetivo obrigatório');
 
-        if(!cliente.treino) 
+        if(!cliente.treino.trim()) 
             throw new Error ('Informações sobre treino obrigatórias');
 
-        if(!cliente.dia) 
+        if(!cliente.dia.trim()) 
             throw new Error ('Dia da semana obrigatório');
 
-        if(!cliente.horario) 
+        if(!cliente.horario.trim()) 
             throw new Error ('Horário obrigatório');
 
         const clienteAdcionado = await inserirCliente(cliente);
         resp.send(clienteAdcionado);
 
     } catch (err) {
-        resp.status(400).send({
-            erro: err.message
-        });
+
+            resp.status(400).send({
+                erro:err.message
+        })
+
     }
 })
 

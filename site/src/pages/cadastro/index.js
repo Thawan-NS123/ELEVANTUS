@@ -77,6 +77,7 @@ export default function Index(){
             toast.error(err.response.data.erro);
         }
     }
+    
 
     function novoClick() {
         setId(0);
@@ -94,6 +95,8 @@ export default function Index(){
         setDia('');
         setHorario('');
     }
+
+
 
     return(
         <main className='pagina-cadastro'>
@@ -115,7 +118,7 @@ export default function Index(){
                         <div className='caixa-input'>
                             <label style={{fontFamily: 'Font-5'}} htmlFor='text' className='label-texto'>&nbsp;&nbsp; Nome Completo</label>
                             <input style={{fontFamily: 'Font-2'}} type='text' className='input-Medio'
-                            value={nome} onChange={e=> setNome(e.target.value)}/>
+                            value={nome} onChange={e=> setNome(e.target.value)}  />
                         </div>
                         
                         <div className='caixa-input'>
@@ -135,7 +138,7 @@ export default function Index(){
                         </div>
 
                         <div className='caixa-input'>
-                            <label style={{fontFamily: 'Font-5'}} htmlFor='text' classname='label-texto'>&nbsp;&nbsp; Gênero</label>
+                            <label style={{fontFamily: 'Font-5'}} htmlFor='text' className='label-texto'>&nbsp;&nbsp; Gênero</label>
                             <input style={{fontFamily: 'Font-2'}} type='text' className='input-Pequeno'
                             value={genero} onChange={e=> setGenero(e.target.value)}/>
                         </div>
