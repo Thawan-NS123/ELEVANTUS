@@ -1,6 +1,6 @@
 import { conexao } from "./connection.js"
 
-//Cadastrar cliente
+//Cadastrar cliente//////////////////////////////////////////////////////////////////////////////////////////////
 export async function inserirCliente(cliente) {
     const comando =
     
@@ -21,7 +21,6 @@ export async function inserirCliente(cliente) {
     `
 
     const [resposta] = await conexao.query(comando, 
-
    [cliente.personal, 
     cliente.nome, 
     cliente.plano,
@@ -49,6 +48,25 @@ export async function inserirCliente(cliente) {
 
 
 
+
+//Alterar imagem de perfil
+export async function alterarImagem(imagem, id){
+    const comando =
+    `UPDATE tb_cliente
+        SET img_cliente = ?
+      WHERE id_cliente  = ?`
+
+      const [resposta]= await conexao.query(comando, [imagem, id]);
+      return resposta.affectedRows;
+}
+
+
+
+
+
+
+
+//Buscar todos os filmes/////////////////////////////////////////////////////////////////////////
 export async function buscarTodosClietes(){
     const comando = 
        ` SELECT id_cliente			            			id,
@@ -78,7 +96,7 @@ export async function buscarTodosClietes(){
 
 
 
-//Busca de cliente por ID
+//Busca de cliente por ID///////////////////////////////////////////////////////////////////////////////
 export async function buscarPorId(id) {
     const comando = 
     `SELECT id_cliente			                    id,
@@ -112,7 +130,7 @@ export async function buscarPorId(id) {
 
 
 
-//Busca de cliente por CPF
+//Busca de cliente por CPF//////////////////////////////////////////////////////////////////////////////////
 export async function buscarPorNome(nome) {
     const comando = 
     `SELECT id_cliente			                    id,
@@ -144,7 +162,7 @@ export async function buscarPorNome(nome) {
 
 
 
-//Alterar cliente 
+//Alterar cliente////////////////////////////////////////////////////////////////////////////////////////////////
 export async function alterarCliente(id, cliente){
     const comando = 
     `
@@ -193,7 +211,7 @@ export async function alterarCliente(id, cliente){
 
 
 
-//Remover cliente
+//Remover cliente////////////////////////////////////////////////////////////////////////////
 export async function removerCliente (id){
     const comando =
     `DELETE FROM tb_cliente 

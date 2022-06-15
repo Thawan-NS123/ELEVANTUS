@@ -1,7 +1,9 @@
 INSERT INTO tb_personal (nm_personal, ds_email, ds_senha)
 VALUES  ("Cleiton", "Elev.clei@gmail.com", "716182020");
 
-select * from tb_personal;
+use elevantusBD;
+
+select * from tb_cliente;
 
  -- Login Personal
 select id_personal 		id,
@@ -41,6 +43,16 @@ INSERT INTO tb_cliente (id_personal,
                         'Manguito Rotatorio, Supino Reto, Supino com alteres, Crucifixo, Deck Pack',
                         'Segunda à Quarta',
                         '14:00');
+                        
+
+-- Alterar a imagem de perfil do cliente
+UPDATE tb_cliente
+   SET img_cliente = '/storage/cliente/342431342423.jpg'
+ WHERE id_cliente = 1;
+ 
+ 
+ 
+
      
 
 -- Alterar cliente
@@ -140,7 +152,9 @@ SELECT 	id_cliente								id,
 
 -- Remover cliente
  DELETE FROM tb_cliente
-        WHERE id_cliente = 2;
+        WHERE id_cliente = 5;
+        
+        
         
 
 

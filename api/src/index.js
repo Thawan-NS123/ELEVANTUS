@@ -11,7 +11,7 @@ server.use(cors());
 server.use(express.json());
 
 //liberar arquivos da storage
-server.use('/storage/capasFilmes' , express.static('storage/capasFilmes'));
+server.use('/storage/capasClientes' , express.static('storage/capasClientes'));
 
 
 //configuração dos endpoints

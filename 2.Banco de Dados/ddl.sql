@@ -25,5 +25,6 @@ CREATE TABLE tb_cliente(
         ds_treino_da_semana     varchar(5000),
         ds_dia_da_semana        varchar(100),
         hr_horario              time,
+        img_cliente				varchar(800),
         FOREIGN KEY (id_personal) REFERENCES tb_personal (id_personal)
 );

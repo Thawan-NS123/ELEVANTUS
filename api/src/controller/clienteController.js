@@ -1,8 +1,10 @@
-import { inserirCliente, buscarPorId, alterarCliente, removerCliente,  buscarTodosClietes, buscarPorNome } from '../repository/clienteRepository.js'
+import { inserirCliente, buscarPorId, alterarCliente, removerCliente,  buscarTodosClietes, buscarPorNome, alterarImagem } from '../repository/clienteRepository.js'
 
+import multer from 'multer'
 import{ Router } from 'express'
 
 const server = Router();
+const upload = multer({dest:'storage/capasClientes'});
 
 
 //Cadastrar cliente
@@ -61,7 +63,28 @@ server.post('/cliente' , async (req, resp) => {
     }
 })
 
+//Alterar foto de perfil do cliente
+server.put('/cliente/:id/capa', upload.single('capa'), (req, resp) => {
+    try {
+        const { id } = req.params;
+        const imagem = req.file.path
+        
+        const resposta = alterarImagem(imagem, id);
 
+        if(resposta != 1){
+            throw new Error('A imagem não pode ser salva')
+        }
+
+        resp.setMaxListeners(204).send();
+    } catch (err) {
+        resp.status(400).send({
+            erro:err.message
+        })
+    }
+})
+
+
+//Buscar todos os cliente
 server.get('/cliente', async (req, resp) =>{
     try {
 
