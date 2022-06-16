@@ -3,6 +3,7 @@ import { listarTodosFilmes, buscarPorNome, deletarCliente } from '../../api/clie
 import { useEffect, useState } from 'react'
 
 import { confirmAlert } from 'react-confirm-alert'
+import  Helmet  from 'react-helmet';
 
 import './index.scss';
 
@@ -74,6 +75,10 @@ export default function Index(){
 
     return(
 <main className='pagina-consultar'>
+
+        <Helmet>
+            <title>Consulta | Elevantus</title>
+        </Helmet>
 
     <section className='fundo-basico'> {/* Está class esta no common */}
 

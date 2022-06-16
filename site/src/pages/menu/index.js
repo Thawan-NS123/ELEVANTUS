@@ -2,6 +2,8 @@ import storage from 'local-storage'
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 
+import  Helmet  from 'react-helmet';
+
 import { Link } from 'react-router-dom';
 import './index.scss';
 
@@ -28,6 +30,11 @@ export default function Index(){
 
     return(
         <main className='pagina-menu'>
+
+        <Helmet>
+            <title>Menu | Elevantus</title>
+        </Helmet>
+
                 <section className='faixa-menu'>
                     <div className="parte-esquerda">
                         <div className="texto-menu">

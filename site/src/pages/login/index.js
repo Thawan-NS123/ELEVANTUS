@@ -1,6 +1,8 @@
 import { login } from '../../api/usuarioApi'
 import { useNavigate } from 'react-router-dom';
 
+import Helmet from 'react-helmet'
+
 import storage from 'local-storage'
 
 import LoadingBar from 'react-top-loading-bar'
@@ -57,6 +59,10 @@ export default function Index(){
     return(
             
         <main className="Page-Login">
+
+        <Helmet>
+            <title>Login | Elevantus</title>
+        </Helmet>
         <LoadingBar color='#ff3d00' ref={ref} />
 
             <div className="Login-Elevantus">

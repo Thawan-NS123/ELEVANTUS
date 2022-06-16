@@ -1,8 +1,8 @@
 import './index.scss';
 
-
 import { Link } from 'react-router-dom';
 
+import Helmet from 'react-helmet'
 
 
 export default function Index(){
@@ -12,6 +12,10 @@ export default function Index(){
                  {/* Cabeçalho do Elevantus(Imagem de No Pain No Gain /
                                         Logo com o fundo preto /
                                         Link para o Login) */} 
+        <Helmet>
+            <title>Página Inicial | Elevantus</title>
+        </Helmet>
+        
         <header className="Cabecalho-Elevantus">
 
             <div className="Cabecalho-Elevantus-Logo_e_Link">

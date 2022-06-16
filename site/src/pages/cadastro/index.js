@@ -5,6 +5,8 @@ import './index.scss';
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
+import Helmet from 'react-helmet';
+
 import { toast } from 'react-toastify';
 
 
@@ -87,7 +89,7 @@ export default function Index(){
             } else {
                 await alterarCliente(id, nome, plano, cpf, genero, nascimento, altura, peso, telefone, objetivo, Observacao, treino, dia, horario, usuario);
                 if(typeof(imagem) == 'object')
-                    await enviarImagemCliente(id, imagem);
+                    await enviarImagemCliente( id, imagem);
                 
                     toast.dark('✔️Cliente Alterado com sucesso');
                 navegar('/consulta')
@@ -126,6 +128,10 @@ export default function Index(){
 
     return(
         <main className='pagina-cadastro'>
+
+        <Helmet>
+            <title>Cadastro | Elevantus</title>
+        </Helmet>
             
             <section className='fundo-basico'> {/* Está class esta no common */}
         
