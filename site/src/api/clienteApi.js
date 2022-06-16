@@ -29,6 +29,19 @@ export async function cadastrarCliente(nome, plano, cpf, genero, nascimento, alt
 }   
 
 
+export async function enviarImagemCliente(id, imagem){
+    const formData = new FormData();
+    formData.append('capa',imagem);
+    const resposta = await api.put(`cliente/${id}/capa`, formData, {
+        headers: {
+            "Content-Type":"multipart/form-data"
+        }
+    })
+
+    return resposta.status;
+}
+
+
 
 export async function alterarCliente(id, nome, plano, cpf, genero, nascimento, altura, peso,
     telefone, objetivo, observacao, treino, dia, horario, usuario){
@@ -72,4 +85,8 @@ export async function deletarCliente(id) {
 export async function buscarPorid(id) {
     const resposta = await api.get(`/cliente/${id}`);
     return resposta.data;
+}
+
+export function buscarImagem(imagem){
+    return `${api.getUri()}/${imagem}`
 }

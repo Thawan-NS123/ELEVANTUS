@@ -112,7 +112,8 @@ export async function buscarPorId(id) {
             ds_observacao		     				observacao,
             ds_treino_da_semana	     				treino,
             ds_dia_da_semana	     				dia,
-            hr_horario		                        horario         
+            hr_horario		                        horario,
+            img_cliente                             imagem         
        FROM tb_cliente
       WHERE id_cliente = ?
     `;

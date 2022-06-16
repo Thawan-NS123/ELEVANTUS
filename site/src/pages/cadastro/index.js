@@ -1,4 +1,4 @@
-import { cadastrarCliente, alterarCliente, buscarPorid} from '../../api/clienteApi';
+import { cadastrarCliente, enviarImagemCliente, alterarCliente, buscarPorid, buscarImagem} from '../../api/clienteApi';
 import storage from 'local-storage'
 
 import './index.scss';
@@ -24,6 +24,7 @@ export default function Index(){
     const [treino, setTreino] = useState('');
     const [dia, setDia] = useState('');
     const [horario, setHorario] = useState('');
+    const [imagem, setImagem] = useState();
     const [id, setId] = useState(0);
 
     const { idParam } = useParams();
@@ -51,30 +52,52 @@ export default function Index(){
         setTreino(resposta.treino);
         setDia(resposta.dia);
         setHorario(resposta.horario);
+        setImagem(resposta.imagem);
         setId(resposta.id);
+    }
+
+    function escolherImagem(){
+        document.getElementById('perfilCliente').click();
+    }
+
+    function mostrarImagem(){
+        if(typeof (imagem) == 'object'){ 
+            return URL.createObjectURL(imagem);
+        } else {
+            return buscarImagem(imagem);
+        }
     }
  
 
     async function salvarClick(){
         try{
+            if(!imagem)
+                throw new Error('❌Imagem do Cliente Obrigatória');
+
             const usuario = storage('usuario-logado').id;
 
             if(id === 0){
 
-                const resposta = await cadastrarCliente(nome, plano, cpf, genero, nascimento, altura, peso, telefone, objetivo, Observacao, treino, dia, horario, usuario);
-                setId(resposta.id);
+                const novoCliente = await cadastrarCliente(nome, plano, cpf, genero, nascimento, altura, peso, telefone, objetivo, Observacao, treino, dia, horario, usuario);
+                await enviarImagemCliente(novoCliente.id, imagem);
 
-                toast.dark('Cliente Cadastrado com sucesso');
+                setId(novoCliente.id);
+                toast.dark('✔️Cliente Cadastrado com sucesso');
                 
             } else {
                 await alterarCliente(id, nome, plano, cpf, genero, nascimento, altura, peso, telefone, objetivo, Observacao, treino, dia, horario, usuario);
-                toast.dark('Cliente Alterado com sucesso');
+                if(typeof(imagem) == 'object')
+                    await enviarImagemCliente(id, imagem);
+                
+                    toast.dark('✔️Cliente Alterado com sucesso');
                 navegar('/consulta')
             }
 
-            
         } catch(err){
-            toast.error(err.response.data.erro);
+            if(err.response)
+                toast.error(err.response.data.erro);
+            else
+                toast.error(err.message);
         }
     }
     
@@ -94,7 +117,10 @@ export default function Index(){
         setTreino('');
         setDia('');
         setHorario('');
+        setImagem()
     }
+
+
 
 
 
@@ -109,7 +135,17 @@ export default function Index(){
                     <div className='consultaefoto'>
                         <div className='config-consultaefoto'> 
                             <h1 style={{fontFamily: 'Font-1'}} className='titulo-da-consulta'>CADASTRO</h1> 
-                            <img src='/image/1652835584315 (1).png' className='logo-user' alt='Elevantus'/>
+                            <div className='addFotoCliente' onClick={escolherImagem}>
+
+                                {!imagem && 
+                                    <img src='/image/user.png' className='logo-user' alt='Imagem Cliente'/>
+                                }
+                                {imagem &&
+                                    <img className='Foto-Cliente' src={mostrarImagem()} alt='Foto Cliente'/>
+                                }
+                                
+                                <input type='file' id='perfilCliente' onChange={e => setImagem(e.target.files[0])}/>
+                            </div>
                         </div>
                     </div>
 

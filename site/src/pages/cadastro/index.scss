@@ -31,6 +31,7 @@
 .pagina-cadastro{
 
     overflow-x: hidden;
+    overflow-y: hidden;
 
     
 
@@ -54,7 +55,7 @@
     
     .config-consultaefoto{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         width: 1160px;
         padding-bottom: 2em;
@@ -68,13 +69,40 @@
         margin-top: -5px;
         color: #000
     }
+
+    .addFotoCliente{
+        width: 50px;
+        margin-right: 3em;
+    }
     
     .logo-user{
-        height: 200px;
+        height: 250px;
         width: 100px;
-        background-color: #ff3d00;
+        padding: 1.5em;
+        background-color: #a4a4a4;
         border-radius: 2em;
+        position:absolute;
+        cursor: pointer;
     }
+
+    .Foto-Cliente{
+        height: 90px;
+        width: 100px;
+        border-radius: 2em;
+        position:absolute;
+    }
+
+    #perfilCliente{
+        height: 90px;
+        width: 100px;
+        padding: 1.5em;
+        border-radius: 2em;
+        border: 1px solid #000;
+        color: #a4a4a4;
+        position: relative;
+        visibility: hidden;
+    }
+
     
     .consultaefoto{
         display: flex;
