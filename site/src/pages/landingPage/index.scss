@@ -216,7 +216,8 @@ main{
 }
 
 .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Essencial{
-    background-color:#AA8B2D;
+    background-color:#ff4d00;
+    color: white;
     padding:1em 4em ;
     border-radius: 1em 1em 0em 0em;
     text-align: center;
@@ -330,8 +331,8 @@ main{
 
     cursor: context-menu;
 
-    background-color:#AA8B2D;
-    color: #AA8B2D;
+    background-color:#ff4d00;
+    color: #ff4d00;
 }
 
 .Faixa-2-Elevantus-Planos_Rodape_B{
@@ -573,13 +574,6 @@ footer:hover{
     margin-bottom: 1em;
 
 }
-
-.Rodape-Elevantus_Telefone_Telefone:hover,
-.Rodape-Elevantus_Email_Email:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 
 .Rodape-Elevantus_Redes_Sociais{
     color: white;

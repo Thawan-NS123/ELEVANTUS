@@ -48,9 +48,9 @@ export default function Index(){
                 <div className="Faixa-2-Elevantus-Plano_Basico">
                     
                         <div className="Faixa-2-Elevantus-Planos_Tipo_e_Valor_Basico">
-                            <h3 styled="color:#333333;" 
+                            <h3 styled="color:white;" 
                                 className="Faixa-2-Elevantus-Planos_Tipo"> &nbsp; BÁSICO</h3>
-                            <h3 styled="color:#333333;"
+                            <h3 styled="color:white;"
                                 className="Faixa-2-Elevantus-Planos_Valor"> &nbsp;R$89,99</h3>
                         </div>
 
@@ -88,9 +88,9 @@ export default function Index(){
 
                         </div>
 
-                        <div styled="background-color:#A7A7A7 ;"
+                        <div styled="background-color:#063869 ;"
                             className="Faixa-2-Elevantus-Planos_Rodape_B">
-                            <h3 styled="color:#A7A7A7 ; font-family:'Font-8';" >Elevantus-Fitness</h3>
+                            <h3 styled="color:#063869 ; font-family:'Font-8';" >Elevantus-Fitness</h3>
                         </div>
                         
                 </div>
