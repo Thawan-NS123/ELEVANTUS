@@ -54,7 +54,7 @@ server.post('/cliente' , async (req, resp) => {
         if(!cliente.nascimento.trim() || cliente.nascimento == 'dd/mm/aaaa') 
             throw new Error ('❌Data de nascimento é obrigatória');
 
-        if(cliente.altura == undefined || cliente.altura < 0 ) 
+        if(cliente.altura == undefined || cliente.altura < 0 || cliente.altura == '' ) 
             throw new Error ('❌Altura obrigatória');
 
         if(!cliente.peso == undefined || cliente.peso < 0 || cliente.peso == '') 

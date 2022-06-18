@@ -92,9 +92,9 @@ export default function Index(){
 
                         </div>
 
-                        <div styled="background-color:#063869 ;"
+                        <div styled="background-color:#08176c ;"
                             className="Faixa-2-Elevantus-Planos_Rodape_B">
-                            <h3 styled="color:#063869 ; font-family:'Font-8';" >Elevantus-Fitness</h3>
+                            <h3 styled="color:#08176c ; font-family:'Font-8';" >Elevantus-Fitness</h3>
                         </div>
                         
                 </div>
