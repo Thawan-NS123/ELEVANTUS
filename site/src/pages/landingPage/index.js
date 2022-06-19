@@ -284,7 +284,7 @@ export default function Index(){
                 
                 </div>
 
-                <div  className="Faixa-4-Elevantus-Fotos_Nomes_e_Comentarios">
+                <div id="Fernandasimith" className="Faixa-4-Elevantus-Fotos_Nomes_e_Comentarios">
 
                     <div className="Faixa-4-Elevantus-Foto_e_Nome">
                         <img  className="Faixa-4-Elevantus-Foto"

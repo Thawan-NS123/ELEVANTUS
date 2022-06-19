@@ -1340,7 +1340,136 @@ Plano Premiun) */
         width: 40em;
     }
 
+    .Faixa-2-Elevantus{
+        height: 320vh;
+    }
 
+    .Faixa-2-Elevantus-Planos{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Faixa-2-Elevantus-Plano_Premiun{
+        margin-top: 65em;
+        position: absolute;
+    }
+
+
+    .Faixa-2-Elevantus-Plano_Basico,
+    .Faixa-2-Elevantus-Plano_Essencial{
+        margin-bottom: 45em;
+    }
+
+    .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Basico{
+        align-items: center;
+        width: 18em;
+        height: 10em;
+    }
+
+    .Faixa-2-Elevantus-Planos_Tipo{
+        margin-left: -0.5em;
+        padding-bottom: 0em;
+        
+    }
+
+    .Faixa-2-Elevantus-Planos_Valor{
+        margin-left: -0.4em;
+        padding-top: 0em;
+        
+    }
+
+    .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Essencial,
+    .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Premiun{
+        width: 18em;
+        height: 10em;
+    }
+
+    .Faixa-2-Elevantus-Planos_Descricoes{
+        width: 18em;
+    }
+
+    .Faixa-2-Elevantus-Planos_Rodape_B,
+    .Faixa-2-Elevantus-Planos_Rodape_E,
+    .Faixa-2-Elevantus-Planos_Rodape_P{
+        width: 18em;
+    }
+
+    .Faixa-3-Elevantus{
+        padding: 2em;
+    }
+
+    .Faixa-3-Elevantus-Imagem_Centralizada{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .Faixa-4-Elevantus{
+        height: 200vh;
+    }
+
+
+
+    .Faixa-4-Elevantus-Todas_Fotos_Nomes_e_Comentarios{
+        flex-direction: row;
+        margin-top: -1em;
+        margin-right: 0em;
+    }
+
+    #Fernandasimith{
+        position: absolute;
+        margin-top: 25em;
+    }
+
+    .Faixa-4-Elevantus-Foto_e_Nome{
+        flex-direction: column;
+        margin-bottom: 0em;
+    }
+
+    .Faixa-4-Elevantus-Foto{
+        position: relative;
+        width: 6em;
+    }
+
+    .Faixa-4-Elevantus-Nome{
+        font-size: 1em;
+        margin-left: 0em;
+
+
+        padding: 0.5em;
+    
+        height: 2em;
+        width: 10em;
+    }
+
+    .Faixa-4-Elevantus-Comentario{
+        margin-bottom: 4em;
+        margin-left: 0.3em;
+        width: 15em;
+        height: 10em;
+        font-size: 1.3em;
+        margin: 0em 1.2em;
+    }
+
+    .Rodape-Elevantus{
+        height: 55vh;
+        padding: 3em;
+    }
+    
+}
+
+@media (max-width:1024px) {
+    .Faixa-3-Elevantus-Imagem_Centralizada{
+        width: 27em;
+        margin-top: 10em;
+    }
+
+    .Faixa-3-Elevantus-Imagem_Aparelhos,
+    .Faixa-3-Elevantus-Imagem_Esteiras,
+    .Faixa-3-Elevantus-Imagem_Aparelho,
+    .Faixa-3-Elevantus-Imagem_Cadeira{
+        border-radius:0.5em ;
+        width: 14em;
+    }
 }
 
 
@@ -1382,7 +1511,9 @@ Plano Premiun) */
     .Cabecalho-Elevantus-Link{
         font-size: 1.7em;
 
-        padding: 1em 2.5em ;
+        padding: 1em 3em ;
+        width: 8em;
+        height: 3.5em;
     
         border-radius: 0.50em;
     }
@@ -1409,6 +1540,7 @@ Plano Premiun) */
 
     /* Faixa-2 (Planos) */
 
+
     .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Basico{
         padding:2em 5.5em ;    
         text-align: center;
@@ -1423,7 +1555,9 @@ Plano Premiun) */
     .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Premiun{
         padding:2em 4.5em ;
         border-radius: 1em 1em 0em 0em;
+        font-size: 1.15em;
         text-align: center;
+        
     }
 
     .Faixa-2-Elevantus-Planos_Tipo,
@@ -1452,6 +1586,7 @@ Plano Premiun) */
     .Faixa-3-Elevantus{
         background-size: 160em;
         background-position: -500px;
+        height: 70vh;
     }
 
     .Faixa-3-Elevantus-Imagem_Aparelhos,
@@ -1462,7 +1597,8 @@ Plano Premiun) */
     }
 
     .Faixa-3-Elevantus-Imagem_Centralizada{
-        width: 18em;
+        width: 40em;
+        margin-top: 10em;
     }
 
     /* Faixa-4 */
@@ -1473,7 +1609,7 @@ Plano Premiun) */
         padding:0.5em 2em;
         margin-bottom: 10em;
     
-        width:35em;
+        width:36em;
     }
 
     .Faixa-4-Elevantus-Titulo{
@@ -1489,10 +1625,11 @@ Plano Premiun) */
 
     .Faixa-4-Elevantus-Todas_Fotos_Nomes_e_Comentarios{
         margin-bottom: 2em;
+        margin: 0em 2em;
     }
 
     .Faixa-4-Elevantus-Foto{
-        width: 8.7em;
+        width: 8em;
     }
 
     .Faixa-4-Elevantus-Nome{
@@ -1501,8 +1638,9 @@ Plano Premiun) */
     }
 
     .Faixa-4-Elevantus-Comentario{
-        font-size: 1.5em;
-        width: 15em;
+        font-size: 1.8em;
+        width: 13.5em;
+        height: 10em;
 
         color: #F3EFEF;
  
@@ -1521,6 +1659,10 @@ Plano Premiun) */
 
     .Rodape-Elevantus_Redes_Sociais{
         font-size: 1.75em;
+    }
+
+    svg{
+        width: 6em;
     }
 
 }
