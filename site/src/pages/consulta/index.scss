@@ -28,13 +28,64 @@
     src: url(./../../fonts/ae7c84783ad48b6d1c8e2bfbe707e0d4.woff2);
 }
 
+header{
+
+    .consultaefoto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .titulo-da-consulta{
+        font-size: 40px ;
+        font-family: 'Font-1';
+        color: white;
+        margin-left: 5px;
+    }
+
+    .config-consultaefoto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: #ff3d00;
+        padding: 1em;
+    }
+
+    .logo-user{
+        height: 5em;
+        width: 5em;
+        margin-top: 5px;
+        margin-right: 5px;
+        border-radius: 100%;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+
+    .perfil{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 10em;
+    }
+
+    p{
+        color: white;
+        font-size: 1.2em;
+    }
+    
+}
+
 .pagina-consultar{
 
     overflow-x: hidden; 
 
     background-color: #c4c4c4;
     height: 100vh;
-    padding: 3em;
+    // padding: 3em;
 
     *{
         margin: 0px;
@@ -43,23 +94,15 @@
         border: 0px solid black;
     }
     
-    .titulo-da-consulta{
-        font-size: 50px ;
-        font-family: 'Font-1';
-    }
     
-    .divprinipal{
+    
+    .divprincipal{
         background-color: #c4c4c4;
-        padding: 40px 0px;
+        padding: 0em;
         margin: 0px 80px;
     }
     
-    .config-consultaefoto{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 1160px;
-    }
+    
     
     .label-texto{
         font-size: 12px ;
@@ -69,15 +112,9 @@
         color: #000
     }
     
-    .logo-user{
-        height: 90px;
-    }
     
-    .consultaefoto{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+    
+    
 
     .input-Medio-BuscarNome{
         width: 1000px;
