@@ -19,7 +19,7 @@
     }
     
     .Login-Elevantus-Imagem_login{
-        width: 70vh;
+        width: 50%;
         height: 100vh;
     }
     
@@ -42,6 +42,7 @@
         color: red;
         margin-left: 14em;
         margin-bottom: 1em;
+        margin-right: 14em;
     }
     
     
@@ -96,9 +97,21 @@
 }
 
 
-@media (min-width: 1020) and (max-width: 1280px){
+@media (min-width: 1024px) and (max-width: 1280px){
+
     .Login-Elevantus-Imagem_login{
         width: 115vh;
         height: 100vh;
     }
 }
+
+@media (min-width: 1281px) and (max-width: 1440px){
+
+    .Login-Elevantus-Imagem_login{
+        width: 115vh;
+        height: 100vh;
+    }
+
+
+}
+

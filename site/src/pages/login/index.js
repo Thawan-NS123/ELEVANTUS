@@ -75,7 +75,7 @@ export default function Index(){
                         <img className="Logo" src="/image/1652835584315 (1).png" alt="Logo-Elevantus"/>
                     </div>
 
-                    <div >
+                    <div>
                         <h5 className='credencias_invalidas' > {erro} </h5>
                     </div>
         

@@ -38,7 +38,7 @@
         box-sizing: border-box;
         margin: 0px;
         padding: 0px;
-        border: 0px solid violet;
+        border: 01px solid violet;
     }
     
     .Elevantus-Seja_Bem_Vindo-Sair{
@@ -61,7 +61,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        
     }
 
     .Porta{
@@ -138,6 +137,23 @@
         -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
         transform: scale(0.9);
+    }
+
+    @media (max-width:768px) {
+
+        .Elevantus-Seja_Bem_Vindo-Sair{
+            width: 40%;
+        }
+
+        .Elevantus-Botoes{
+            flex-direction: column;
+            width: 280px;
+            align-self: center;
+        }
+
+        .Botao-Cadastro{
+            margin-bottom: 5em;
+        }
     }
     
 
