@@ -84,9 +84,7 @@ main{
     border-radius: 0.25em;
 
     color: white;
-    text-decoration: none;
-
-    
+    text-decoration: none; 
 }
 
 .Cabecalho-Elevantus-Link:hover{
@@ -597,6 +595,753 @@ svg:hover{
     padding: 0.1px;
 }
 
+@media (min-width:200px) and (max-width:320px) {
+
+    /* Cabeçalho do Elevantus 
+    (Logo com o fundo preto /
+     Link para o Login) */
+    
+        .Cabecalho-Elevantus{
+            height: 20vh;
+        }
+    
+        .Cabecalho-Elevantus-Logo{
+            width: 3em;
+            height: 3.2em;
+        }
+    
+        .Cabecalho-Elevantus-Link:link,
+        .Cabecalho-Elevantus-Link:visited,
+        .Cabecalho-Elevantus-Link:active{
+            font-size: 1em;
+            padding: 1em 2em ;
+        }
+    
+        .Cabecalho-Elevantus-Imagem_de_fundo{
+            visibility: hidden;
+            position: absolute  ;
+        }
+    
+    /* Faixa 2 do Elevantus
+    (Titulo dos Planos /
+     Plano Básico /
+     Plano Essencial /
+     Plano Premiun) */
+    
+     
+        .Faixa-2-Elevantus{
+            align-self: center;
+        }
+    
+        .Faixa-2-Elevantus-Titulo_e_Alter{
+    
+            margin-left: 17%;
+    
+            border-radius:0.35em 0.35em;
+    
+            width:13em;
+        }
+    
+        .Faixa-2-Elevantus-Titulo{
+            margin-left: 2.2em;
+        }
+    
+        .Faixa-2-Elevantus-Alter{
+            visibility: hidden;
+            position: absolute;
+        }
+    
+        .Faixa-2-Elevantus-Planos{
+            flex-direction: column;
+            justify-content: center;
+            width: 18em;
+        }
+    
+        .Faixa-2-Elevantus-Plano_Basico,
+        .Faixa-2-Elevantus-Plano_Essencial,
+        .Faixa-2-Elevantus-Plano_Premiun{
+            margin-top: 4em;
+            margin-bottom: 4em;
+            margin-left: 6%;
+        }
+    
+        .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Basico{
+            padding:1em 3.1em ;
+        }
+    
+        .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Essencial{
+            padding:1em 2em ;
+        }
+    
+        .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Premiun{
+            padding:1em 2.7em ;
+        }
+    
+        .Faixa-2-Elevantus-Planos_Tipo{
+            font-size: 1.5em;
+            margin-left: 0.75em;
+        }
+        
+        .Faixa-2-Elevantus-Planos_Valor{
+            font-size: 1.7em;
+            margin-left: 1em;
+        }
+        
+        .Faixa-2-Elevantus-Planos_Tipo_E{
+            font-size: 1.5em;
+        }
+    
+        .Faixa-2-Elevantus-Planos_Valor_E{
+            font-size: 1.7em;
+        }
+        
+        .Faixa-2-Elevantus-Planos_Tipo_P{
+            font-size: 1.5em;
+            margin-left: 0.75em;
+        }
+        
+        .Faixa-2-Elevantus-Planos_Valor_P{
+            font-size: 1.7em;
+            margin-left: 0.9em;
+        }
+    
+        .Faixa-2-Elevantus-Planos_Descricoes{
+            padding: 1em;
+            background-color: #F3EFEF;
+        }
+        
+        .Faixa-2-Elevantus-Planos_Descricoes_Beneficio{
+            font-size:1.25em ;
+        }
+        
+        
+        .Faixa-2-Elevantus-Planos_Descricoes_Certo_e_Errado_e_Informacoes{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 2em;
+        }
+        
+        .Faixa-2-Elevantus-Planos_Descricoes_Certo_e_Errado{
+            width: 1.5em;
+            height: 1.5em;
+            margin-right: 0.7em;
+        
+            border-radius: 10em;
+        }
+        
+        .Faixa-2-Elevantus-Planos_Descricoes_Informacoes{
+            width: 300px;
+        }   
+        
+        .Faixa-3-Elevantus{
+            visibility: hidden;
+            position: absolute;
+        }
+    
+    
+        .Faixa-4-Elevantus{
+            height: 280vh;
+        }
+    
+        .Faixa-4-Elevantus-Titulo_e_Balao{
+            
+            border-radius:0.35em 0.35em ;
+        
+            width: 16.5em;
+        
+            padding: 0.25em 2em;
+            margin-top: 2em;
+            margin-bottom: 4em;
+            margin-left: 9%;
+        }
+        
+        .Faixa-4-Elevantus-Titulo{
+            font-family:'Font-4';
+            font-size: 1.2em;
+            color: white;
+            
+            letter-spacing:0.05em;
+        
+            margin-top:0.3em ;
+            margin-right: 1.5em;
+            margin-left: 1.7em;
+        }
+        
+        .Faixa-4-Elevantus-Balao{
+            visibility: hidden;
+            position: absolute;
+        }
+    
+        .Faixa-4-Elevantus-Todas_Fotos_Nomes_e_Comentarios{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1em;
+        }
+    
+        .Faixa-4-Elevantus-Foto_e_Nome{
+            flex-direction: column;
+            margin-bottom: 0em;
+        }
+    
+        .Faixa-4-Elevantus-Foto{
+            position: relative;
+            width: 6em;
+        }
+    
+        .Faixa-4-Elevantus-Nome{
+            font-size: 1em;
+            margin-left: 0em;
+    
+    
+            padding: 0.5em;
+        
+            height: 2em;
+            width: 10em;
+        }
+    
+        .Faixa-4-Elevantus-Comentario{
+            margin-bottom: 4em;
+            margin-left: 0.3em;
+            width: 15em;
+            height: 10em;
+            font-size: 1em;
+        }
+    
+        .Rodape-Elevantus{
+            flex-direction: column;
+    
+            padding: 1.5em;
+            height: 100vh;
+            justify-content: space-around;
+        }
+    
+        .Rodape-Elevantus_Telefone_e_Email{
+            text-align: center;
+        }
+    
+        .Rodape-Elevantus_Redes_Sociais_Twitter_Instagram_Facebook{
+            text-align: center;
+        }
+    
+        .Rodape-Elevantus_Twitter_Instagram_Facebook{
+            justify-content: space-evenly;
+        }
+    }
+
+@media (min-width:321px) and (max-width:375px) {
+
+/* Cabeçalho do Elevantus 
+(Logo com o fundo preto /
+ Link para o Login) */
+
+    .Cabecalho-Elevantus{
+        height: 20vh;
+    }
+
+    .Cabecalho-Elevantus-Logo_e_Link{
+        padding: 1.5em;
+    }
+
+    .Cabecalho-Elevantus-Logo{
+        width: 3em;
+        height: 3.2em;
+    }
+
+    .Cabecalho-Elevantus-Link:link,
+    .Cabecalho-Elevantus-Link:visited,
+    .Cabecalho-Elevantus-Link:active{
+        font-size: 1em;
+        padding: 1em 2em ;
+    }
+
+    .Cabecalho-Elevantus-Imagem_de_fundo{
+        visibility: hidden;
+        position: absolute  ;
+    }
+
+/* Faixa 2 do Elevantus
+(Titulo dos Planos /
+ Plano Básico /
+ Plano Essencial /
+ Plano Premiun) */
+
+ 
+    .Faixa-2-Elevantus{
+        align-self: center;
+        justify-content: center;
+    }
+
+    .Faixa-2-Elevantus-Titulo_e_Alter{
+
+        margin-left: 23%;
+
+        border-radius:0.35em 0.35em;
+
+        width: 14em;
+    }
+
+    .Faixa-2-Elevantus-Titulo{
+        margin-left: 2.2em;
+    }
+
+    .Faixa-2-Elevantus-Alter{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .Faixa-2-Elevantus-Planos{
+        flex-direction: column;
+        justify-content: center;
+        width: 18em;
+    }
+
+    .Faixa-2-Elevantus-Plano_Basico,
+    .Faixa-2-Elevantus-Plano_Essencial,
+    .Faixa-2-Elevantus-Plano_Premiun{
+        margin-top: 4em;
+        margin-bottom: 4em;
+        margin-left: 22%;
+    }
+
+    .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Basico{
+        padding:1em 1em ;
+        width: 250px;
+    }
+
+    .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Essencial{
+        padding:1em 2em ;
+        width: 250px;
+    }
+
+    .Faixa-2-Elevantus-Planos_Tipo_e_Valor_Premiun{
+        padding:1em 1em ;
+        width: 250px;
+    }   
+
+    .Faixa-2-Elevantus-Planos_Tipo{
+        font-size: 1.5em;
+        margin-left: 1.5em;
+    }
+    
+    .Faixa-2-Elevantus-Planos_Valor{
+        font-size: 1.7em;
+        margin-left: 1.7em;
+    }
+    
+    .Faixa-2-Elevantus-Planos_Tipo_E{
+        font-size: 1.5em;
+    }
+
+    .Faixa-2-Elevantus-Planos_Valor_E{
+        font-size: 1.7em;
+    }
+    
+    .Faixa-2-Elevantus-Planos_Tipo_P{
+        font-size: 1.5em;
+        margin-left: 1.5em;
+    }
+    
+    .Faixa-2-Elevantus-Planos_Valor_P{
+        font-size: 1.7em;
+        margin-left: 1.5em;
+    }
+
+    .Faixa-2-Elevantus-Planos_Descricoes{
+        padding: 1em;
+        background-color: #F3EFEF;
+        width: 250px;
+    }
+    
+    .Faixa-2-Elevantus-Planos_Descricoes_Beneficio{
+        font-size:1.25em ;
+    }
+    
+    
+    .Faixa-2-Elevantus-Planos_Descricoes_Certo_e_Errado_e_Informacoes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+    
+    .Faixa-2-Elevantus-Planos_Descricoes_Certo_e_Errado{
+        width: 1.5em;
+        height: 1.5em;
+        margin-right: 0.7em;
+    
+        border-radius: 10em;
+    }
+    
+    .Faixa-2-Elevantus-Planos_Descricoes_Informacoes{
+        width: 300px;
+    }   
+
+    .Faixa-2-Elevantus-Planos_Rodape_B,
+    .Faixa-2-Elevantus-Planos_Rodape_E,
+    .Faixa-2-Elevantus-Planos_Rodape_P{
+        width: 250px;
+    }
+    
+    .Faixa-3-Elevantus{
+        visibility: hidden;
+        position: absolute;
+    }
+
+
+    .Faixa-4-Elevantus{
+        height: 280vh;
+        align-items: center;
+    }
+
+    .Faixa-4-Elevantus-Titulo_e_Balao{
+        
+        border-radius:0.35em 0.35em ;
+    
+        width: 16.5em;
+    
+        padding: 0.25em 2em;
+        margin-top: 2em;
+        margin-bottom: 4em;
+        margin-left: 0%;
+    }
+    
+    .Faixa-4-Elevantus-Titulo{
+        font-family:'Font-4';
+        font-size: 1.2em;
+        color: white;
+        
+        letter-spacing:0.05em;
+    
+        margin-top:0.3em ;
+        margin-right: -1em;
+        margin-left: -0.6em;
+
+        width: 15em;
+    }
+    
+    .Faixa-4-Elevantus-Balao{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .Faixa-4-Elevantus-Todas_Fotos_Nomes_e_Comentarios{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0em;
+    }
+
+    .Faixa-4-Elevantus-Foto_e_Nome{
+        flex-direction: column;
+        margin-bottom: 0em;
+    }
+
+    .Faixa-4-Elevantus-Foto{
+        position: relative;
+        width: 6em;
+    }
+
+    .Faixa-4-Elevantus-Nome{
+        font-size: 1em;
+        margin-left: 0em;
+
+
+        padding: 0.5em;
+    
+        height: 2em;
+        width: 10em;
+    }
+
+    .Faixa-4-Elevantus-Comentario{
+        margin-bottom: 4em;
+        margin-left: 0.3em;
+        width: 15em;
+        height: 10em;
+        font-size: 1.1em;
+    }
+
+    .Rodape-Elevantus{
+        flex-direction: column;
+
+        padding: 1.5em;
+        height: 100vh;
+        justify-content: space-around;
+    }
+
+    .Rodape-Elevantus_Telefone_e_Email{
+        text-align: center;
+    }
+
+    .Rodape-Elevantus_Redes_Sociais_Twitter_Instagram_Facebook{
+        text-align: center;
+    }
+
+    .Rodape-Elevantus_Twitter_Instagram_Facebook{
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width:376px) and (max-width:425px) {
+    /* Cabeçalho do Elevantus 
+(Logo com o fundo preto /
+ Link para o Login) */
+
+ .Cabecalho-Elevantus{
+    height: 15vh;
+}
+
+.Cabecalho-Elevantus-Logo_e_Link{
+    padding: 2em;
+}
+
+.Cabecalho-Elevantus-Logo{
+    width: 2em;
+    height: 2.5em;
+}
+
+.Cabecalho-Elevantus-Link:link,
+.Cabecalho-Elevantus-Link:visited,
+.Cabecalho-Elevantus-Link:active{
+    font-size: 0.6em;
+    padding: 1.5em 3em ;
+    
+}
+
+.Cabecalho-Elevantus-Imagem_de_fundo{
+    visibility: hidden;
+    position: absolute  ;
+}
+
+/* Faixa 2 do Elevantus
+(Titulo dos Planos /
+Plano Básico /
+Plano Essencial /
+Plano Premiun) */
+
+
+.Faixa-2-Elevantus{
+    align-self: center;
+    justify-content: center;
+}
+
+.Faixa-2-Elevantus-Titulo_e_Alter{
+
+    margin-left: 18%;
+
+    border-radius:0.35em 0.35em;
+
+    width: 17em;
+}
+
+.Faixa-2-Elevantus-Titulo{
+    margin-left: 3.5em;
+}
+
+.Faixa-2-Elevantus-Alter{
+    visibility: hidden;
+    position: absolute;
+}
+
+.Faixa-2-Elevantus-Planos{
+    flex-direction: column;
+    justify-content: center;
+    width: 18em;
+}
+
+.Faixa-2-Elevantus-Plano_Basico,
+.Faixa-2-Elevantus-Plano_Essencial,
+.Faixa-2-Elevantus-Plano_Premiun{
+    margin-top: 4em;
+    margin-bottom: 4em;
+    margin-left: 32%;
+}
+
+.Faixa-2-Elevantus-Planos_Tipo_e_Valor_Basico{
+    padding:1em 1em ;
+    width: 250px;
+}
+
+.Faixa-2-Elevantus-Planos_Tipo_e_Valor_Essencial{
+    padding:1em 2em ;
+    width: 250px;
+}
+
+.Faixa-2-Elevantus-Planos_Tipo_e_Valor_Premiun{
+    padding:1em 1em ;
+    width: 250px;
+}   
+
+.Faixa-2-Elevantus-Planos_Tipo{
+    font-size: 1.5em;
+    margin-left: 1.5em;
+}
+
+.Faixa-2-Elevantus-Planos_Valor{
+    font-size: 1.7em;
+    margin-left: 1.7em;
+}
+
+.Faixa-2-Elevantus-Planos_Tipo_E{
+    font-size: 1.5em;
+}
+
+.Faixa-2-Elevantus-Planos_Valor_E{
+    font-size: 1.7em;
+}
+
+.Faixa-2-Elevantus-Planos_Tipo_P{
+    font-size: 1.5em;
+    margin-left: 1.5em;
+}
+
+.Faixa-2-Elevantus-Planos_Valor_P{
+    font-size: 1.7em;
+    margin-left: 1.5em;
+}
+
+.Faixa-2-Elevantus-Planos_Descricoes{
+    padding: 1em;
+    background-color: #F3EFEF;
+    width: 250px;
+}
+
+.Faixa-2-Elevantus-Planos_Descricoes_Beneficio{
+    font-size:1.25em ;
+}
+
+
+.Faixa-2-Elevantus-Planos_Descricoes_Certo_e_Errado_e_Informacoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.Faixa-2-Elevantus-Planos_Descricoes_Certo_e_Errado{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.7em;
+
+    border-radius: 10em;
+}
+
+.Faixa-2-Elevantus-Planos_Descricoes_Informacoes{
+    width: 300px;
+}   
+
+.Faixa-2-Elevantus-Planos_Rodape_B,
+.Faixa-2-Elevantus-Planos_Rodape_E,
+.Faixa-2-Elevantus-Planos_Rodape_P{
+    width: 250px;
+}
+
+.Faixa-3-Elevantus{
+    visibility: hidden;
+    position: absolute;
+}
+
+
+.Faixa-4-Elevantus{
+    height: 280vh;
+    align-items: center;
+}
+
+.Faixa-4-Elevantus-Titulo_e_Balao{
+    
+    border-radius:0.35em 0.35em ;
+
+    width: 18em;
+
+    padding: 0.25em 2em;
+    margin-top: 2em;
+    margin-bottom: 4em;
+
+}
+
+.Faixa-4-Elevantus-Titulo{
+
+    
+    letter-spacing:0.05em;
+
+    margin-top:0.3em ;
+    margin-right: -1em;
+    margin-left: -0.0em;
+
+    width: 15em;
+}
+
+.Faixa-4-Elevantus-Balao{
+    visibility: hidden;
+    position: absolute;
+}
+
+.Faixa-4-Elevantus-Todas_Fotos_Nomes_e_Comentarios{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: -0.5em;
+}
+
+.Faixa-4-Elevantus-Foto_e_Nome{
+    flex-direction: column;
+    margin-bottom: 0em;
+}
+
+.Faixa-4-Elevantus-Foto{
+    position: relative;
+    width: 6em;
+}
+
+.Faixa-4-Elevantus-Nome{
+    font-size: 1em;
+    margin-left: 0em;
+
+
+    padding: 0.5em;
+
+    height: 2em;
+    width: 10em;
+}
+
+.Faixa-4-Elevantus-Comentario{
+    margin-bottom: 4em;
+    margin-left: 0.3em;
+    width: 15em;
+    height: 10em;
+    font-size: 1.2em;
+}
+
+.Rodape-Elevantus{
+    flex-direction: column;
+
+    padding: 1.5em;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.Rodape-Elevantus_Telefone_e_Email{
+    text-align: center;
+}
+
+.Rodape-Elevantus_Redes_Sociais_Twitter_Instagram_Facebook{
+    text-align: center;
+}
+
+.Rodape-Elevantus_Twitter_Instagram_Facebook{
+    justify-content: space-evenly;
+}
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    .Cabecalho-Elevantus-Imagem_de_fundo{
+        height: 20em;
+        width: 40em;
+    }
+
+
+}
 
 
 @media (max-width:1280px){
