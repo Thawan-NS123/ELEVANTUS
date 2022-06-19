@@ -29,33 +29,33 @@ export default function Index(){
     }
 
     return(
-        <main className='pagina-menu'>
 
-        <Helmet>
-            <title>Menu | Elevantus</title>
-        </Helmet>
 
-                <section className='faixa-menu'>
-                    <div className="parte-esquerda">
-                        <div className="texto-menu">
-                            <p className="paragrafo-menu">Bem vindo a area do menu, para onde você deseja ir ?</p>
-                            <p onClick={sairClick} className="paragrafo-sair">Voltar</p>
-                        </div>                        
+        <main className="pagina-menu">
+
+            <Helmet>
+                <title>Menu | Elevantus</title>
+            </Helmet>
+
+                <div className="Elevantus-Seja_Bem_Vindo-Sair">
+                    <h2 className="Seja_Bem_Vindo">Seja Bem vindo a area do menu, para onde você deseja ir ?</h2>
+                    <div className='Sair-Imagem' onClick={sairClick}>
+                        <img className='Porta' src='/image/sair.png' alt='Porta-de-Sair' />
+                        <Link to='/login' className="Sair">SAIR</Link>
                     </div>
-                    <div className="parte-direita">
+                </div>
 
-                        <div className="perfil-cleiton">
-                            <p className="nome-cleiton">{usuario}</p>
-                            <img src="/image/cleiton.jpg" width="70em" alt='imagem-fundo' styled='border-radius: 9em;' />
-                        </div>
-
-                        <div className="botoes-link">
-                            <Link className="botao-cadastro" to='/cadastro'>Cadastro</Link>
-                            <Link className="botao-consulta" to='/consulta'>Consulta</Link>
-                        </div>
-
+                <div className="Elevantus-Usuario_Cadastro_Consulta">
+                    <div className="Elevantus-Usuario">
+                        <p className="usuario">{usuario}</p>
+                        <img className="usuario-imagem" src="/image/cleiton.jpg" alt='Foto-Perfil'/>
                     </div>
-                </section>
+                    <div className="Elevantus-Botoes">
+                        <Link className="Botao-Cadastro"to='/cadastro'>Cadastro</Link>
+                        <Link className="Botao-Consulta"to='/consulta'>Consulta</Link>
+                    </div>
+                </div>
+
         </main>
     )
 

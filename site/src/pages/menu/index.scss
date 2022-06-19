@@ -30,109 +30,108 @@
 
 .pagina-menu{
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
     *{
+        box-sizing: border-box;
         margin: 0px;
         padding: 0px;
-        box-sizing: border-box;
         border: 0px solid violet;
     }
     
-    .faixa-menu{
+    .Elevantus-Seja_Bem_Vindo-Sair{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #ff3d00;
         height: 100vh;
+        width: 60vh;
+        padding: 1em;
     }
     
-    .parte-esquerda{
-    background-color: #ff3d00; 
-
-    }
-    
-    .home{
-        padding: 15px;
-    }
-    
-    
-    
-    .texto-menu{
-        padding: 4em 2em 7em 1em;
-    }
-    
-    .paragrafo-menu{
-        font-size: 2.7em;
+    .Seja_Bem_Vindo{
         color: white;
-        width: 7em;
-
-        margin-bottom:6em ;
+        font-size: 2.6em;
+        margin-bottom:3em ;
     }
 
-    .paragrafo-sair{
-        font-size: 2em;
-        color: white;
-        margin-top: 16em;
-    }
-
-    .paragrafo-sair:hover{
-        cursor: pointer;
-        transition: 3.5s ;
-
-        padding-left: 0.5em;
-    }
-    
-    .parte-direita{
-        width: 120vh;
-        height: 150vw;
-        background-image: url(../../../public/image/Mulher-fazendo-barra.jpg);
-        background-size: center center;
-        background-repeat: no-repeat;
-        background-position: 0px 50px;
-        background-size: 60em 55em ;
-        padding-top: 5em;
-    }
-    
-    .perfil-cleiton{
+    .Sair-Imagem{
         display: flex;
         flex-direction: row;
-        justify-content: end;
+        align-items: center;
+        
+    }
+
+    .Porta{
+        width: 1.7em;
+        height: 1.7em;
+        cursor: pointer;
+    }
+    
+    .Sair{
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        margin-left: 0.3em;
+    }
+
+    .Elevantus-Usuario_Cadastro_Consulta{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(../../../public/image/Fundo-Menu.jpg);
+        height: 100vh;
+        width: 73%;
+        padding: 2em;
+    }
+    
+    .Elevantus-Usuario{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         align-items: center;
     }
     
-    .nome-cleiton{
+    .usuario{
         font-family: 'Font-1';
-
+        font-size: 1.2em;
+    
         color: white;
-
-        width: 4em;
-
-
-        margin-right:0.5em ;
-
+        
+        margin-right: 0.5em;
     }
     
-    .botoes-link{
+    .usuario-imagem{
+        width: 5em;
+        border-radius: 100%;
+    }
+    
+    .Elevantus-Botoes{
         display: flex;
         flex-direction: row;
-        padding-top: 39em;
         justify-content: center;
-        
+        margin-bottom: 5em;
     }
     
-    .botao-cadastro, .botao-consulta{
+    .Botao-Cadastro,
+    .Botao-Consulta{
         font-family:'Font-1';
-
+    
         background-color: #ff3d00;
-
+    
         padding: 1.5em 4em ;
-
+    
         border-radius: 0.25em;
-
+    
         color: white;
         text-decoration: none;
+        margin: 0em 15%;
     }
     
-    .botao-cadastro:hover,
-    .botao-consulta:hover{
+    .Botao-Cadastro:hover,
+    .Botao-Consulta:hover{
         cursor: pointer;
         background-color: #ff5724;
         transition:all 0.8s ease;
@@ -141,12 +140,6 @@
         transform: scale(0.9);
     }
     
-    .botao-consulta{
-        margin-left: 19em;
-    }
-    
-    img{
-        border-radius: 9em;
-    }
+
 }
 
