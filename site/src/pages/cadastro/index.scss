@@ -79,7 +79,7 @@
         height: 250px;
         width: 100px;
         padding: 1.5em;
-        background-color: #ff3d00;
+        background-color: #ffffff;
         border-radius: 2em;
         position:absolute;
         cursor: pointer;
@@ -213,17 +213,13 @@
     }
 
     .botao-de-novo{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
         font-family:'Font-1';
         font-size: 1.1em;
 
-        margin-left: 3.2em;
     
         background-color: black;
     
-        padding: 1.2em 3em ;
+        padding: 1.2em 3.7em ;
     
         border-radius: 0.25em;
     
@@ -370,8 +366,12 @@
         }
         
         .botoes-posicao{
-            text-align: center;
             margin-top: 50px;
+            
+            width: 420px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
         
         .botao-de-salvar{
@@ -382,13 +382,19 @@
             font: 15px titulo;
         }
         
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
+        .botao-de-novo{
+            font-family:'Font-1';
+            font-size: 1.1em;
+    
+        
+            background-color: black;
+        
+            padding: 1.2em 3.7em ;
+        
+            border-radius: 0.25em;
+        
+            color: white;
+            text-decoration: none;
         }
     }
     
@@ -502,7 +508,7 @@
         }
         
         .caixa-de-texto-grande{
-            width: 600px;
+            width: 620px;
             border-radius: 5px;
             border-style: none;
             height: 200px;
@@ -513,8 +519,13 @@
         }
         
         .botoes-posicao{
-            text-align: center;
+            
             margin-top: 50px;
+            
+            width: 700px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
         
         .botao-de-salvar{
@@ -525,13 +536,19 @@
             font: 15px titulo;
         }
     
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
+        .botao-de-novo{
+            font-family:'Font-1';
+            font-size: 1.1em;
+    
+        
+            background-color: black;
+        
+            padding: 1.2em 3.7em ;
+        
+            border-radius: 0.25em;
+        
+            color: white;
+            text-decoration: none;
         }
     }
     
@@ -640,7 +657,7 @@
         }
         
         .caixa-de-texto-grande{
-            width: 900px;
+            width: 920px;
             border-radius: 5px;
             border-style: none;
             height: 200px;
@@ -653,6 +670,10 @@
         .botoes-posicao{
             text-align: center;
             margin-top: 50px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
         
         .botao-de-salvar{
@@ -663,13 +684,19 @@
             font: 15px titulo;
         }
     
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
+        .botao-de-novo{
+            font-family:'Font-1';
+            font-size: 1.1em;
+    
+        
+            background-color: black;
+        
+            padding: 1.2em 3.7em ;
+        
+            border-radius: 0.25em;
+        
+            color: white;
+            text-decoration: none;
         }
     }
     
@@ -795,6 +822,11 @@
         .botoes-posicao{
             text-align: center;
             margin-top: 50px;
+            width: 1270px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
         
         .botao-de-salvar{
@@ -938,6 +970,11 @@
         .botoes-posicao{
             text-align: center;
             margin-top: 50px;
+            
+            display: flex;
+            flex-direction: row;
+            width: 1350px;
+            justify-content: space-around;
         }
         
         .botao-salvar{
@@ -948,13 +985,19 @@
             font: 15px titulo;
         }
     
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
+        .botao-de-novo{
+            font-family:'Font-1';
+            font-size: 1.1em;
+    
+        
+            background-color: black;
+        
+            padding: 1.46em 4.8em ;
+        
+            border-radius: 0.25em;
+        
+            color: white;
+            text-decoration: none;
         }
     }
     
@@ -981,6 +1024,7 @@
             justify-content: space-around;
         }
         .config-consultaefoto{
+            margin-top: 50px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -1087,7 +1131,9 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            
             margin-top: 50px;
+            margin-bottom: 50px;
            
         }
         
@@ -1099,13 +1145,19 @@
             font: 15px titulo;
         }
     
-        .botao-de-descartar{
-            padding: 20px 40px;
-            border-radius: 25px;
-            background-color: #ffffff;
-            color: #000000;
-            font: 15px titulo;
-            border: solid black 2px
+        .botao-de-novo{
+            font-family:'Font-1';
+            font-size: 1.1em;
+    
+        
+            background-color: black;
+        
+            padding: 1.2em 3.7em ;
+        
+            border-radius: 0.25em;
+        
+            color: white;
+            text-decoration: none;
         }
     }
     
