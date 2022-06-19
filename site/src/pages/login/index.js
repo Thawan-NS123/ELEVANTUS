@@ -57,48 +57,42 @@ export default function Index(){
 
 
     return(
-            
-        <main className="Page-Login">
+
+        <main className="pagina-login">
 
         <Helmet>
             <title>Login | Elevantus</title>
         </Helmet>
+
         <LoadingBar color='#ff3d00' ref={ref} />
 
+            <img className="Imagem-Flexão" src="/image/img-login.jpg" alt="Flexão"/>
+
             <div className="Login-Elevantus">
-        
-                <img src="/image/img-login.jpg" className='Login-Elevantus-Imagem_login' alt="Image-Login"/>
-        
-                <div className="Login-Elevantus-Informacoes_logo_email_e_senha_e_botao">
-        
-                    <div className="Login-Elevantus-Informacoes_logo">
-                        <img className="Logo" src="/image/1652835584315 (1).png" alt="Logo-Elevantus"/>
+
+                <img className="Logo" src="/image/1652835584315 (1).png" alt="Logo"/>
+
+                <h3 className='Credencias-invalidas' > {erro} </h3>
+
+                <div className="Informacoes-login">
+                    <div className="Informacoes-Email">
+                        <label style={{fontFamily: 'Font-1'}} for="Email">Email</label>
+                        <input style={{fontFamily: 'Font-1'}} placeholder="example@hotmail.com" type="email"
+                         value={email} onChange={e => setEmail(e.target.value)}/>
                     </div>
 
-                    <div>
-                        <h5 className='credencias_invalidas' > {erro} </h5>
-                    </div>
-        
-                    <div className="Login-Elevantus-Informacoes_email">
-                        <label style={{fontFamily: 'Font-5'}} className="Login-Elevantus-Informacoes_label" for="email">&nbsp; Email</label>
-                        <input style={{fontFamily: 'Font-2'}} className="Login-Elevantus-Informacoes_input" type="email"
-                        placeholder=' example@hotmail.com' value={email} onChange={e => setEmail(e.target.value)}/>
-                    </div>
-        
-                    <div className="Login-Elevantus-Informacoes_senha">
-                        <label style={{fontFamily: 'Font-5'}} className="Login-Elevantus-Informacoes_label" for="Senha">&nbsp; Senha</label>
-                        <input style={{fontFamily: 'Font-2'}} className="Login-Elevantus-Informacoes_input" type="password"
-                        placeholder=' ***' value={senha} onChange={e => setSenha(e.target.value)}/>
-                    </div>
-        
-                    <div className="Login-Elevantus-Informacoes_botao">
-                        <button style={{fontFamily: 'Font-1'}} onClick={entrarClink}
-                                disabled={carregando}>ENTRAR</button>
+                    <div className="Informacoes-Senha">
+                        <label style={{fontFamily: 'Font-1'}} for="password">Senha</label>
+                        <input style={{fontFamily: 'Font-1'}} placeholder="***" type="password"
+                         value={senha} onChange={e => setSenha(e.target.value)}/>
                     </div>
                 </div>
-        
+
+                <button style={{fontFamily: 'Font-1'}} onClick={entrarClink}
+                 disabled={carregando}>ENTRAR</button>
+
             </div>
-            
+
         </main>
     )
 

@@ -3,89 +3,80 @@
     src: url(./../../fonts/CircularSpUIv3T-Black.woff2);
 }
 
-.Page-Login{
+.pagina-login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #c4c4c4;
+
+    
     *{
         box-sizing: border-box;
         padding: 0px;
         margin: 0px;
-        border: 0px solid violet;   
+        border: 0px solid red   
     }
-    
-    .Login-Elevantus{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color: #c4c4c4;
-    }
-    
-    .Login-Elevantus-Imagem_login{
-        width: 50%;
+
+    .Imagem-Flexão{
         height: 100vh;
     }
-    
-    .Login-Elevantus-Informacoes_logo_email_e_senha_e_botao{
-        display: flex;
-        flex-direction: column;
-        margin: 0em 0em 0em 5em;
-    }
-    
-    .Logo{    
+
+    .Login-Elevantus{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 2em;
-        margin-left: 13em ;
+        align-items: center;
+        padding: 1em;
+        margin-left: 5em;
+    }
+
+    .Logo{
         width: 5em;
     }
 
-    .credencias_invalidas{
+    .Credencias-invalidas{
         color: red;
-        margin-left: 14em;
-        margin-bottom: 1em;
-        margin-right: 14em;
     }
-    
-    
-    .Login-Elevantus-Informacoes_email,
-    .Login-Elevantus-Informacoes_senha{
+
+    .Informacoes-login{
+        width: 22em;
+    }
+
+    .Informacoes-Email,
+    .Informacoes-Senha{
         display: flex;
         flex-direction: column;
-        margin-bottom: 2em;
+        margin: 1em 0em;
     }
-    
-    .Login-Elevantus-Informacoes_label{
-        font-size: 1.5em;
+
+    label{
+        font-size: 1.1em;
+        margin-left: 1em;
     }
-    
-    .Login-Elevantus-Informacoes_input{
-        padding: 0.5em 8.5em 0.5em 0.5em;
-        border-radius: 0.2em;
+
+    input{
+        padding: 1em 2em ;
+        border-radius: 0.5em;
         border: none;
-        font-size: 1.5em;
+        font-size: 0.95em;
         outline: none;
         border-style: none;
+        margin-bottom: 1em;
     }
-    
-    .Login-Elevantus-Informacoes_botao{
-        display: flex;
-        justify-content: center;
-        margin-top: 2em;
-    
-    }
-    
+
     button{
         font-size: 1.1em;
-    
+
         background-color: #ff3d00;
-    
-        padding: 1em 4em ;
-    
+
+        padding: 1em 3em ;
+
         border-radius: 0.25em;
-    
+
         color: white;
         text-decoration: none;
     }
-    
+
     button:hover{
         cursor: pointer;
         background-color: #ff5724;
