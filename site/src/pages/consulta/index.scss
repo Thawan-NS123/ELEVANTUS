@@ -51,7 +51,7 @@ header{
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        background-color: #ff3d00;
+        background-color: #000;
         padding: 1em;
     }
 
@@ -72,9 +72,13 @@ header{
         width: 10em;
     }
 
-    p{
-        color: white;
+    .usuario{
+        font-family: 'Font-1';
         font-size: 1.2em;
+    
+        color: white;
+        
+        margin-right: 0.5em;
     }
     
 }

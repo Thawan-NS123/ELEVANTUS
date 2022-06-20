@@ -39,7 +39,7 @@
     }
 
     .Informacoes-login{
-        width: 22em;
+        width: 27em;
     }
 
     .Informacoes-Email,
@@ -55,7 +55,7 @@
     }
 
     input{
-        padding: 1em 2em ;
+        padding: 1em 2.5em ;
         border-radius: 0.5em;
         border: none;
         font-size: 0.95em;
@@ -85,24 +85,27 @@
         -ms-transform: scale(0.9);
         transform: scale(0.9);
     }
-}
 
+    @media (min-width: 1024px) and (max-width: 1280px){
 
-@media (min-width: 1024px) and (max-width: 1280px){
-
-    .Login-Elevantus-Imagem_login{
-        width: 115vh;
-        height: 100vh;
+        .Imagem-Flexão{
+            width: 65vh;
+            height: 100vh;
+        }
     }
-}
-
-@media (min-width: 1281px) and (max-width: 1440px){
-
-    .Login-Elevantus-Imagem_login{
-        width: 115vh;
-        height: 100vh;
+    
+    @media (min-width: 1281px) and (max-width: 1440px){
+    
+        .Imagem-Flexão{
+            width: 115vh;
+            height: 100vh;
+        }
+    
+    
     }
 
-
 }
+
+
+
 

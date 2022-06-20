@@ -9,7 +9,7 @@ import './index.scss';
 
 export default function Index(){
 
-    const [usuario, setUsuario] = useState('Thawan Nascimento Silva');
+    const [usuario, setUsuario] = useState('-');
 
     const navegar = useNavigate();
 

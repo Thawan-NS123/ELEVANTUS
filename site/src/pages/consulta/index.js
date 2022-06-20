@@ -1,7 +1,7 @@
 import { listarTodosFilmes, buscarPorNome, deletarCliente } from '../../api/clienteApi';
 
 import { useEffect, useState } from 'react'
-
+import storage from 'local-storage'
 import { confirmAlert } from 'react-confirm-alert'
 import  Helmet  from 'react-helmet';
 
@@ -16,13 +16,20 @@ export default function Index(){
 
     const [cliente, setCliente] = useState([]);
     const [filtro, setFiltro] = useState('');
+    const [usuario, setUsuario] = useState('-');
 
     const navigate = useNavigate();
+
+    useEffect(() => {
+        if(storage('usuario-logado')){
+            const usuarioLogado = storage('usuario-logado')
+            setUsuario(usuarioLogado.nome);
+        }
+    },[])
 
 
     async function filtrar(){
         const resp = await buscarPorNome(filtro);
-        console.log(resp)
         setCliente(resp);
     }
 
@@ -85,7 +92,7 @@ export default function Index(){
                 <div className='config-consultaefoto'> 
                     <h2 style={{fontFamily: 'Font-1'}} className='titulo-da-consulta'>CONSULTA</h2> 
                     <div className='perfil'>
-                        <p  styled={{fontFamily: 'Font-1'}}>Cleiton</p>
+                        <p className="usuario">{usuario}</p>
                         <img src='/image/cleiton.jpg' className='logo-user' alt='Elevantus'/>
                     </div>
                 </div>
