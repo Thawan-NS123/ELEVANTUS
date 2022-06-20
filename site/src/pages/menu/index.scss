@@ -55,6 +55,7 @@
         color: white;
         font-size: 2.6em;
         margin-bottom:3em ;
+        width: auto;
     }
 
     .Sair-Imagem{
@@ -127,7 +128,7 @@
     
         color: white;
         text-decoration: none;
-        margin: 0em 15%;
+        margin: 0em 13%;
     }
     
     .Botao-Cadastro:hover,
@@ -138,6 +139,105 @@
         -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
         transform: scale(0.9);
+    }
+
+    @media (max-width:320px) {
+        
+        .Elevantus-Seja_Bem_Vindo-Sair{
+            background-color: white;
+        }
+
+        .Seja_Bem_Vindo{
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .Sair-Imagem{
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .Elevantus-Usuario{
+            flex-direction: column-reverse;
+            justify-content: center;
+            background-color: #ff3d00;
+            padding: 1em;
+
+        }
+
+        .usuario{
+            font-size: 2em;
+            color: white;
+        }
+
+        .usuario-imagem{
+            width: 7em;
+        }
+
+        .Elevantus-Usuario_Cadastro_Consulta{
+
+
+            position: absolute;
+            justify-content: space-between;
+            width: 100%;
+
+            padding: 0em;
+        }
+
+        .Elevantus-Botoes{
+            margin-bottom: 20em;
+            margin-right: 5em;
+        }
+
+    }
+
+    @media (max-width:425px) {
+        
+        .Elevantus-Seja_Bem_Vindo-Sair{
+            background-color: white;
+        }
+
+        .Seja_Bem_Vindo{
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .Sair-Imagem{
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .Elevantus-Usuario{
+            flex-direction: column-reverse;
+            justify-content: center;
+            background-color: #ff3d00;
+            padding: 1em;
+
+        }
+
+        .usuario{
+            font-size: 2em;
+            color: white;
+        }
+
+        .usuario-imagem{
+            width: 7em;
+        }
+
+        .Elevantus-Usuario_Cadastro_Consulta{
+
+
+            position: absolute;
+            justify-content: space-between;
+            width: 100%;
+
+            padding: 0em;
+        }
+
+        .Elevantus-Botoes{
+            margin-bottom: 20em;
+        }
+
     }
 
     @media (max-width:768px) {
@@ -154,6 +254,46 @@
 
         .Botao-Cadastro{
             margin-bottom: 5em;
+        }
+    }
+
+    @media (max-width:1000px) {
+        .Elevantus-Botoes{
+            margin-left: 5em;
+            flex-direction: column;
+            width: 270px;
+        }
+
+        .Botao-Cadastro{
+            margin-bottom: em;
+        }
+    }
+
+    @media (min-width:1281px) and (max-width:1440px) {
+
+        .Porta{
+            height: 2em;
+        }
+
+        .Sair{
+            font-size: 1.7em;
+        }
+
+        .Seja_Bem_Vindo{
+            font-size: 3em;
+        }
+
+        .usuario{
+            font-size: 1.5em;
+        }
+
+        .usuario-imagem{
+            width: 6em;
+        }
+
+        .Botao-Cadastro,
+        .Botao-Consulta{
+            font-size: 1.25em;
         }
     }
     
