@@ -233,3 +233,26 @@ header{
         background-color: #f8f8f8;
     }
 }
+
+
+@media (max-width: 768px) {
+    .logo-user{
+        display: none;
+    }
+
+    p{
+        display: none;
+    }
+
+    .responsividade-tabela{
+        overflow-x: auto;
+        width: 100%;
+        
+    }
+
+    .divprincipal{
+        margin: 0%;
+    }
+
+    
+}

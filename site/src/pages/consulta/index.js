@@ -116,39 +116,41 @@ export default function Index(){
                     <button onClick={filtrar}>Buscar</button>
                 </div>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>NOME</th>
-                            <th>CPF</th>
-                            <th>PLANO</th>
-                            <th>DIA</th>
-                            <th>HORA</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        {cliente.map(item =>
+                    <div className='responsividade-tabela'>
+                        <table>
+                            <thead>
                                 <tr>
-                                    <td>{item.id}</td>
-                                    <td>{item.nome}</td>
-                                    <td className='Item-CPF'>{item.cpf}</td>
-                                    <td>{item.plano}</td>
-                                    <td>{item.dia}</td>
-                                    <td>{item.horario.substr(0, 5)}</td>
-                                    <td className='configuracoes'>
-                                        <img className="image-1" src='/image/lapis-edit.png' width="20px" alt='editar' onClick={() => editarCliente(item.id)}/>
-                                        <img className="image-2" src='/image/table-lixeira.png' width="20px" alt='excluir' onClick={() => excluirClienteClick(item.id, item.nome)}/>
-                                    </td>
-                                </tr>     
-                        )}
+                                    <th>ID</th>
+                                    <th>NOME</th>
+                                    <th>CPF</th>
+                                    <th>PLANO</th>
+                                    <th>DIA</th>
+                                    <th>HORA</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
+                                {cliente.map(item =>
+                                        <tr>
+                                            <td>{item.id}</td>
+                                            <td>{item.nome}</td>
+                                            <td className='Item-CPF'>{item.cpf}</td>
+                                            <td>{item.plano}</td>
+                                            <td>{item.dia}</td>
+                                            <td>{item.horario.substr(0, 5)}</td>
+                                            <td className='configuracoes'>
+                                                <img className="image-1" src='/image/lapis-edit.png' width="20px" alt='editar' onClick={() => editarCliente(item.id)}/>
+                                                <img className="image-2" src='/image/table-lixeira.png' width="20px" alt='excluir' onClick={() => excluirClienteClick(item.id, item.nome)}/>
+                                            </td>
+                                        </tr>     
+                                )}
+
+                                
+                            </tbody>
                         
-                    </tbody>
-                    
-                </table>
+                        </table> 
+                    </div>
             </div>
         </div>
 
