@@ -134,10 +134,10 @@ export default function Index(){
                                 {cliente.map(item =>
                                         <tr>
                                             <td>{item.id}</td>
-                                            <td>{item.nome}</td>
+                                            <td>{item.nome.substr(0, 10)}</td>
                                             <td className='Item-CPF'>{item.cpf}</td>
                                             <td>{item.plano}</td>
-                                            <td>{item.dia}</td>
+                                            <td>{item.dia.substr(0, 10)}</td>
                                             <td>{item.horario.substr(0, 5)}</td>
                                             <td className='configuracoes'>
                                                 <img className="image-1" src='/image/lapis-edit.png' width="20px" alt='editar' onClick={() => editarCliente(item.id)}/>

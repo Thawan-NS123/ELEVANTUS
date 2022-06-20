@@ -86,10 +86,35 @@
         transform: scale(0.9);
     }
 
+    @media (min-width:320px) and (max-width:768px) {
+        .pagina-login{
+            background-color: #c4c4c4;
+        }
+
+        .Login-Elevantus{
+            background-color: #c4c4c4;
+            height: 100em;
+        }
+
+        .Imagem-Flexão{
+            visibility: hidden;
+            position: absolute;
+            background-color: #c4c4c4;
+            width: 100%;
+        }
+
+        .Logo,
+        .Credencias-invalidas,
+        .Informacoes-login,
+        button{
+            margin-right: 5em;
+        }
+    }
+
     @media (min-width: 1024px) and (max-width: 1280px){
 
         .Imagem-Flexão{
-            width: 65vh;
+            width: 72vh;
             height: 100vh;
         }
     }
