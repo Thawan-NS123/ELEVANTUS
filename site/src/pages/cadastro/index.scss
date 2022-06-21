@@ -251,6 +251,26 @@
         -ms-transform: scale(0.9);
         transform: scale(0.9);
     }
+
+    .seta{
+        width: 1.6em;
+        height: 1.3em;
+        cursor: pointer;
+    }
+    
+    .Voltar{
+        font-size: 1.8em;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin-left: 0.3em;
+    }
+
+    .Sair-Imagem{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 40px;
+    }
     
     
     

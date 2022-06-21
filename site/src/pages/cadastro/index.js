@@ -1,5 +1,6 @@
 import { cadastrarCliente, enviarImagemCliente, alterarCliente, buscarPorid, buscarImagem} from '../../api/clienteApi';
 import storage from 'local-storage'
+import { Link } from 'react-router-dom';
 
 import './index.scss';
 import { useEffect, useState } from 'react';
@@ -122,7 +123,9 @@ export default function Index(){
         setImagem()
     }
 
-
+    function voltarClick(){
+        navegar('/menu');
+    }
 
 
 
@@ -137,6 +140,11 @@ export default function Index(){
         
                 {/* A partir daqui são class's no index.css  */} 
                 <div className='divprincipal'>
+
+                <div className='Sair-Imagem' onClick={voltarClick}>
+                        <img className='seta' src='/image/Black-Left-Arrow-Transparent-Background.png' alt='Porta-de-Sair' />
+                        <Link to='/menu' className="Voltar">VOLTAR</Link>
+                </div>
 
                     <div className='consultaefoto'>
                         <div className='config-consultaefoto'> 
