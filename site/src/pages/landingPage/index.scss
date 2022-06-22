@@ -40,6 +40,8 @@
     border: 0px solid blue;
 }
 
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -116,7 +118,7 @@ main{
     display: flex;
     flex-direction: column;
 
-    background-color:#c4c4c4;
+    background-color:#fff;
 
 }
 
@@ -173,6 +175,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 
 
 }
@@ -185,6 +188,15 @@ main{
 
     margin-top: 7em;
     margin-bottom: 7em;
+    border-radius: 1em;
+
+    box-shadow:
+    0px 2px 6.3px rgba(0, 0, 0, 0.071),
+    0px 2.4px 18.2px rgba(0, 0, 0, 0.102),
+    0px 1.9px 39px rgba(0, 0, 0, 0.128),
+    0px 3.9px 76.8px rgba(0, 0, 0, 0.159),
+    0px 81px 160px rgba(0, 0, 0, 0.23)
+    ;
 }
 
 
@@ -435,7 +447,7 @@ main{
     flex-direction: column;
     height: 90vh;
 
-    background-color:#c4c4c4
+    background-color:#fff
 }
 
 /* Titulo da Faixa-4 */
@@ -479,11 +491,13 @@ main{
     flex-direction: row;
 
     justify-content: space-around;
+
 }
 
 .Faixa-4-Elevantus-Fotos_Nomes_e_Comentarios{
     display: flex;
     flex-direction: column;
+    
 
 }
 
@@ -497,6 +511,15 @@ main{
 .Faixa-4-Elevantus-Foto{
     width: 4.5em;
     border-radius: 10em;
+    border: 1px solid #F3EFEF;
+
+    box-shadow:
+  0px 2px 6.3px rgba(0, 0, 0, 0.071),
+  0px 2.4px 18.2px rgba(0, 0, 0, 0.102),
+  0px 1.9px 39px rgba(0, 0, 0, 0.128),
+  0px 3.9px 76.8px rgba(0, 0, 0, 0.159),
+  0px 81px 160px rgba(0, 0, 0, 0.23)
+;
 
     position: absolute;
 }
@@ -517,15 +540,23 @@ main{
     height: 2em;
     width: 12em;
 
+    box-shadow:
+  0px 2px 6.3px rgba(0, 0, 0, 0.071),
+  0px 2.4px 18.2px rgba(0, 0, 0, 0.102),
+  0px 1.9px 39px rgba(0, 0, 0, 0.128),
+  0px 3.9px 76.8px rgba(0, 0, 0, 0.159),
+  0px 81px 160px rgba(0, 0, 0, 0.23)
+;
+
     cursor: context-menu
 }
 
 
 .Faixa-4-Elevantus-Comentario{
-    background-color: #A7A7A7;
+    background-color: #d4d4d4;
     border-radius: 0.5em;
 
-    color: #F3EFEF;
+    color: #000;
     font-family:'Font-4';
     font-size: 1.25em;
     text-align: center;
@@ -534,7 +565,15 @@ main{
     padding-left: 1em;
     width: 305px;
 
-    cursor: context-menu
+    cursor: context-menu;
+
+    box-shadow:
+  0px 2px 6.3px rgba(0, 0, 0, 0.071),
+  0px 2.4px 18.2px rgba(0, 0, 0, 0.102),
+  0px 1.9px 39px rgba(0, 0, 0, 0.128),
+  0px 3.9px 76.8px rgba(0, 0, 0, 0.159),
+  0px 81px 160px rgba(0, 0, 0, 0.23)
+;
 }
 
 /* Rodapé */

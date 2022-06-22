@@ -130,7 +130,7 @@ export default function Index(){
 
 
     return(
-        <main className='pagina-cadastro'>
+        <main  style={{backgroundColor:'#fff'}} className='pagina-cadastro'>
 
         <Helmet>
             <title>Cadastro | Elevantus</title>
@@ -142,7 +142,7 @@ export default function Index(){
                 <div className='divprincipal'>
 
                 <div className='Sair-Imagem' onClick={voltarClick}>
-                        <img className='seta' src='/image/Black-Left-Arrow-Transparent-Background.png' alt='Porta-de-Sair' />
+                        <img className='seta' src='/image/sair.png' alt='Porta-de-Sair' />
                         <Link to='/menu' className="Voltar">VOLTAR</Link>
                 </div>
 
