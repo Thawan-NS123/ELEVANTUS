@@ -70,7 +70,6 @@ main{
 
 .Cabecalho-Elevantus-Logo{
     width: 3.5em;
-    cursor:pointer;
 }
 
 .Cabecalho-Elevantus-Link:link,
@@ -407,7 +406,7 @@ main{
     border-radius:0.5em ;
     width: 35em;
 
-    margin-top: 5em;
+    margin-top: 12em;
 }
 
 .Faixa-3-Elevantus-Imagem_Aparelhos:hover,
@@ -445,7 +444,7 @@ main{
 .Faixa-4-Elevantus{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 75vh;
 
     background-color:#fff
 }

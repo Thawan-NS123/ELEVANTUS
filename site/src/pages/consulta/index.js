@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import storage from 'local-storage'
 import { confirmAlert } from 'react-confirm-alert'
 import  Helmet  from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 import './index.scss';
 
@@ -101,10 +102,14 @@ export default function Index(){
 
     <section className='fundo-basico'> {/* Está class esta no common */}
 
-    
+    <Link to='/menu' className='Sair-Imagem' >
+                        <img className='seta' src='/image/sair.png' alt='Porta-de-Sair' />
+                        <p className="Voltar">VOLTAR</p>
+                </Link>
         
         {/* A partir daqui são class's no index.css  */} 
         <div className='divprincipal'>
+
 
 
 
@@ -134,7 +139,7 @@ export default function Index(){
                                 {cliente.map(item =>
                                         <tr>
                                             <td>{item.id}</td>
-                                            <td>{item.nome.substr(0, 10)}</td>
+                                            <td>{item.nome.substr(0, 15)}</td>
                                             <td className='Item-CPF'>{item.cpf}</td>
                                             <td>{item.plano}</td>
                                             <td>{item.dia.substr(0, 10)}</td>

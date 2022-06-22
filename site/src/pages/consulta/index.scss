@@ -117,7 +117,41 @@ header{
     }
     
     
+    .seta{
+        width: 1.6em;
+        height: 1.3em;
+        cursor: pointer;
+        
+    }
     
+    .Voltar{
+        font-size: 1.2em;
+        font-family: 'Font-2';
+        text-decoration: none;
+        color: #000;
+        margin-left: 0.3em;
+    }
+
+    .Sair-Imagem:hover{
+        cursor: pointer;
+        transition: 2s;
+        padding-left: 0em;
+    }
+
+    .Sair-Imagem{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 0.4em;
+        padding: 0.5em;
+        width: 120px;
+        margin-bottom: 40px;
+        padding-left: 0.5em;
+        margin-right: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
     
 
     .input-Medio-BuscarNome{
